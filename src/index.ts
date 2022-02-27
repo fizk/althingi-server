@@ -40,7 +40,8 @@ async function serveHttp(conn: Deno.Conn) {
                     status: 400,
                     statusText: '400 Bad Request',
                     headers: {
-                        'content-type': 'application/json'
+                        'content-type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
                     }
                 })
             );
@@ -100,7 +101,8 @@ async function serveHttp(conn: Deno.Conn) {
                     status: 200,
                     statusText: '200 OK',
                     headers: {
-                        'content-type': 'application/json'
+                        'content-type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
                     }
                 }),
             );
@@ -134,7 +136,8 @@ async function serveHttp(conn: Deno.Conn) {
                     status: 500,
                     statusText: '500 Internal Server Error',
                     headers: {
-                        'content-type': 'application/json'
+                        'content-type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
                     }
                 })
             );

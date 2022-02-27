@@ -1,5 +1,7 @@
 FROM denoland/deno:1.19.1
 
+ARG ENV
+
 # The port that your application listens to.
 EXPOSE 8181
 
