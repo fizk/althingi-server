@@ -1,0 +1,24 @@
+import { GraphQLNonNull, GraphQLFieldConfig } from '../../lib/graphql/type/definition.ts';
+import { GraphQLID } from '../../lib/graphql/type/scalars.ts';
+import { Assembly } from '../type/Assembly.ts';
+import type { Context } from '../index.d.ts';
+
+interface Args {
+    assembly: number
+}
+
+const AssemblyConfig: GraphQLFieldConfig<null, Context, Args> = {
+    type: Assembly,
+    args: {
+        assembly: {
+            type: new GraphQLNonNull(GraphQLID),
+        },
+    },
+    resolve: (_, { assembly }) => ({
+        id: assembly,
+        from: '2001-01-01',
+        to: '2001-01-01',
+    }),
+};
+
+export default AssemblyConfig;

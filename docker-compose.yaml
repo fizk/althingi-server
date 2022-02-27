@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  run:
+    container_name: althingi-server-run
+    build:
+      args:
+        - ENV=development
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src/:/app/src/
+      - ./lib/:/app/lib/
+    command: bash -c "denon run --allow-net --allow-env --unstable src/index.ts"
+
+  test:
+    container_name: althingi-server-run-test
+    build:
+      args:
+        - ENV=development
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/:/app/src/
+      - ./lib/:/app/lib/
+      - ./test/:/app/test/
+    command: bash -c "deno test"
