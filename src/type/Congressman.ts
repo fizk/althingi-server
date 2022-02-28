@@ -12,5 +12,13 @@ export const Congressman: GraphQLObjectType = new GraphQLObjectType({
             type: new GraphQLNonNull(GraphQLString),
             resolve: ({name}) => name,
         },
+        birth: {
+            type: new GraphQLNonNull(GraphQLString),
+            resolve: ({ birth }) => birth,
+        },
+        abbreviation: {
+            type: GraphQLString,
+            resolve: ({ abbreviation }) => abbreviation,
+        },
     }),
 });
