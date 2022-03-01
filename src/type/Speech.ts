@@ -32,7 +32,7 @@ export const Speech: GraphQLObjectType = new GraphQLObjectType({
             resolve: ({ congressman }) => congressman,
         },
         congressmanType: {
-            type: new GraphQLNonNull(GraphQLString),
+            type: GraphQLString,
             resolve: ({ congressman_type }) => congressman_type,
         },
         from: {
