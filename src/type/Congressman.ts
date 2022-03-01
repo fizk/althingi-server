@@ -1,5 +1,6 @@
-import { GraphQLObjectType, GraphQLNonNull } from '../../lib/graphql/type/definition.ts';
-import { GraphQLString, GraphQLID } from '../../lib/graphql/type/scalars.ts';
+import { GraphQLObjectType, GraphQLNonNull, GraphQLList } from '../../lib/graphql/type/definition.ts';
+import { GraphQLString, GraphQLID, } from '../../lib/graphql/type/scalars.ts';
+import { Party } from './Party.ts';
 
 export const Congressman: GraphQLObjectType = new GraphQLObjectType({
     name: 'Congressman',
@@ -19,6 +20,10 @@ export const Congressman: GraphQLObjectType = new GraphQLObjectType({
         abbreviation: {
             type: GraphQLString,
             resolve: ({ abbreviation }) => abbreviation,
+        },
+        parties: {
+            type: new GraphQLList(Party),
+            resolve: ({ parties }) => parties || [],
         },
     }),
 });

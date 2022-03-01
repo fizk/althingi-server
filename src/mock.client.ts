@@ -74,7 +74,8 @@ function generateCongressman(id: number) {
         name: `${faker.name.firstName()} ${faker.name.lastName()}`,
         birth: new Date(faker.date.past()).toISOString(),
         death: null,
-        abbreviation: faker.hacker.abbreviation()
+        abbreviation: faker.hacker.abbreviation(),
+        parties: [generateParty(faker.random.number())]
     }
 }
 
@@ -127,5 +128,31 @@ function generateSpeech(id: number, assembly: number, issue: number, category: s
         iteration: '*',
         word_count: faker.random.number(),
         validated: oneOf([true, false]),
+    }
+}
+
+function generateParty(id: number) {
+    return {
+        id,
+        name: oneOf(['Sjálfstæðisflokkur',
+            'Framsóknarflokkur',
+            'Samfylkingin',
+            'Vinstrihreyfingin - grænt framboð',
+            'Björt framtíð',
+            'Píratar',
+            'Viðreisn',
+            'Miðflokkurinn',
+            'Flokkur fólksins',]),
+        abbrShort: faker.lorem.word(),
+        abbrLong: faker.lorem.word(),
+        color: oneOf(['00adef',
+            '8ec83e',
+            'da2128',
+            '488e41',
+            '92278f',
+            '522c7f',
+            'f6a71d',
+            '199094',
+            'EE4D9B',]),
     }
 }
