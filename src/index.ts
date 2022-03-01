@@ -1,5 +1,6 @@
 import { graphql } from '../lib/graphql/graphql.ts';
 import schema from './schema.ts';
+import { MockClient } from './mock.client.ts'
 
 const server = Deno.listen({ port: 3000 });
 console.log({
@@ -95,6 +96,7 @@ async function serveHttp(conn: Deno.Conn) {
             schema,
             source: jsonRequest.query,
             variableValues: jsonRequest.variables,
+            contextValue: MockClient
         }).then((result) => {
             respondWith(
                 new Response(JSON.stringify(result), {
