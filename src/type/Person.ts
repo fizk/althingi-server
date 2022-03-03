@@ -1,8 +1,8 @@
 import { GraphQLObjectType, GraphQLNonNull } from '../../lib/graphql/type/definition.ts';
-import { GraphQLString, GraphQLID } from '../../lib/graphql/type/scalars.ts';
+import { GraphQLString, GraphQLID, } from '../../lib/graphql/type/scalars.ts';
 
-export const Constituency: GraphQLObjectType = new GraphQLObjectType({
-    name: 'Constituency',
+export const Person: GraphQLObjectType = new GraphQLObjectType({
+    name: 'Person',
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
@@ -10,19 +10,19 @@ export const Constituency: GraphQLObjectType = new GraphQLObjectType({
         },
         name: {
             type: new GraphQLNonNull(GraphQLString),
-            resolve: ({ name }) => name,
+            resolve: ({name}) => name,
         },
-        abbrShort: {
+        birth: {
             type: new GraphQLNonNull(GraphQLString),
-            resolve: ({ abbr_short }) => abbr_short,
+            resolve: ({ birth }) => birth,
         },
-        abbrLong: {
+        death: {
             type: GraphQLString,
-            resolve: ({ abbr_long }) => abbr_long,
+            resolve: ({ death }) => death,
         },
-        description: {
+        abbreviation: {
             type: GraphQLString,
-            resolve: ({ description }) => description,
+            resolve: ({ abbreviation }) => abbreviation,
         },
     }),
 });

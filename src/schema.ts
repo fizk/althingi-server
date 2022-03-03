@@ -1,5 +1,6 @@
 import { GraphQLSchema } from '../lib/graphql/type/schema.ts';
 import { GraphQLObjectType } from '../lib/graphql/type/definition.ts';
+import Person from './query/Person.ts';
 import Assembly from './query/Assembly.ts';
 import Assemblies from './query/Assemblies.ts';
 import AssemblyCongressman from './query/AssemblyCongressman.ts';
@@ -13,6 +14,7 @@ export default new GraphQLSchema({
     query: new GraphQLObjectType({
         name: 'Query',
         fields: {
+            Person,
             Assemblies,
             Assembly,
             AssemblyCongressman,

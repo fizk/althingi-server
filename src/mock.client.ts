@@ -208,6 +208,10 @@ export function oneOf<T>(options: Array<T>): T {
 export const MockClient: Context = {
     get(arg: string, params?: Record<string, unknown>): Promise<Record<string, unknown> | Array<Record<string, unknown>>> {
         switch (arg) {
+            case 'person':
+                return Promise.resolve(
+                    generateCongressman(params?.person as number)
+                );
             case 'assembly':
                 return Promise.resolve(
                     generateAssembly(params?.assembly as number)
@@ -347,7 +351,7 @@ function generateParty(id: number) {
 }
 
 function generateConstituencies() {
-    const constituency = oneOf<{ id: number, name: string, short: string, long: string|null }>(constituencies);
+    const constituency = oneOf<{ id: number, name: string, short: string, long: string | null }>(constituencies);
     return {
         id : constituency.id,
         name: constituency.name,

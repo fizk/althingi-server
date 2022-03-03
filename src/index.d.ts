@@ -1,6 +1,7 @@
 
 export interface Context {
-    get(arg: 'assembly' |
+    get(arg: 'person' |
+            'assembly' |
             'assemblies' |
             'assembly.congressman' |
             'assembly.congressmen' |
