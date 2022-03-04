@@ -83,122 +83,387 @@ const issueStatus = [
 
 const congressmanType = [
     null,
-    'forseti alingis',
-    'fjrmlarherra',
-    'dmsmlarherra',
-    'viskiptarherra',
-    'landbnaarrherra',
-    'heilbrigisrherra',
-    'atvinnumlarherra',
-    'flagsmlarherra',
-    'forstisrherra',
-    'inaarrherra',
-    'sjvartvegsrherra',
-    'menntamlarherra',
-    'samgngurherra',
-    'utanrkisrherra',
-    'umhverfisrherra',
-    'rherra Hagstofu slands',
-    'rherra norrnna samstarfsmla',
-    'flags- og tryggingamlarherra',
-    'sjvartvegs- og landbnaarrherra',
-    'efnahags- og viskiptarherra',
-    'mennta- og menningarmlarherra',
-    'dmsmla-  og mannrttindarherra',
-    'samgngu-  og sveitarstjrnarrherra',
-    'velferarrherra',
-    'innanrkisrherra',
-    'fjrmla- og efnahagsrherra',
-    'umhverfis- og aulindarherra',
-    'atvinnuvega- og nskpunarrherra',
-    'flags- og hsnismlarherra',
-    'inaar- og viskiptarherra',
-    'flags- og jafnrttismlarherra',
-    'feramla-, inaar- og nskpunarrherra',
-    'samgngu- og sveitarstjrnarrherra',
-    'flags- og barnamlarherra',
-    'utanrkis- og runarsamvinnurherra',
-    'umhverfis-, orku- og loftslagsrherra',
-    'flagsmla- og vinnumarkasrherra',
-    'innviarherra',
-    'mennta- og barnamlarherra',
-    'vsinda-, inaar- og nskpunarrherra',
-    'feramla-, viskipta- og menningarmlarherra',
-    'flags- og vinnumarkasrherra',
-    'matvlarherra',
-    'hskla-, inaar- og nskpunarrherra',
+    "forseti alþingis",
+    "fjármálaráðherra",
+    "dómsmálaráðherra",
+    "viðskiptaráðherra",
+    "landbúnaðarráðherra",
+    "heilbrigðisráðherra",
+    "atvinnumálaráðherra",
+    "félagsmálaráðherra",
+    "forsætisráðherra",
+    "iðnaðarráðherra",
+    "sjávarútvegsráðherra",
+    "menntamálaráðherra",
+    "samgönguráðherra",
+    "utanríkisráðherra",
+    "umhverfisráðherra",
+    "ráðherra Hagstofu Íslands",
+    "ráðherra norrænna samstarfsmála",
+    "félags- og tryggingamálaráðherra",
+    "sjávarútvegs- og landbúnaðarráðherra",
+    "efnahags- og viðskiptaráðherra",
+    "mennta- og menningarmálaráðherra",
+    "dómsmála-  og mannréttindaráðherra",
+    "samgöngu-  og sveitarstjórnarráðherra",
+    "velferðarráðherra",
+    "innanríkisráðherra",
+    "fjármála- og efnahagsráðherra",
+    "umhverfis- og auðlindaráðherra",
+    "atvinnuvega- og nýsköpunarráðherra",
+    "félags- og húsnæðismálaráðherra",
+    "iðnaðar- og viðskiptaráðherra",
+    "félags- og jafnréttismálaráðherra",
+    "ferðamála-, iðnaðar- og nýsköpunarráðherra",
+    "samgöngu- og sveitarstjórnarráðherra",
+    "félags- og barnamálaráðherra",
+    "utanríkis- og þróunarsamvinnuráðherra",
+    "umhverfis-, orku- og loftslagsráðherra",
+    "félagsmála- og vinnumarkaðsráðherra",
+    "innviðaráðherra",
+    "mennta- og barnamálaráðherra",
+    "vísinda-, iðnaðar- og nýsköpunarráðherra",
+    "ferðamála-, viðskipta- og menningarmálaráðherra",
+    "félags- og vinnumarkaðsráðherra",
+    "matvælaráðherra",
+    "háskóla-, iðnaðar- og nýsköpunarráðherra",
 ]
 
 const speechType = [
-    'ræða',
-    'um atkvæðagreiðslu',
-    'flutningsræða',
-    'um fundarstjórn',
-    'ótbýting þingskjala',
-    'grein fyrir atkvæði',
-    'svar',
-    'útvarpsræða',
-    'prent',
-    'jómfrúrræða',
-    'andsvar',
-    'ber af sér sakir',
-    'málsh. um fundarstjórn',
+    "ræða",
+    "um atkvæðagreiðslu",
+    "flutningsræða",
+    "um fundarstjórn",
+    "útbýting þingskjala",
+    "grein fyrir atkvæði",
+    "svar",
+    "útvarpsræða",
+    "prent",
+    "jómfrúrræða",
+    "andsvar",
+    "ber af sér sakir",
+    "málsh. um fundarstjórn",
 ];
 
 const constituencies = [
-    { id: 1, name: '-', short: '-', long: null },
-    { id: 2, name: 'Austur-H�navatnss�sla', short: 'AH', long: 'A.-H�nv.' },
-    { id: 3, name: 'Austurland', short: 'AL', long: 'Austurl.' },
-    { id: 4, name: 'Austur-Skaftafellss�sla', short: 'AS', long: 'A.-Skaft.' },
-    { id: 5, name: 'Akureyri', short: 'Ak', long: 'Ak.' },
-    { id: 6, name: 'Bar�astrandars�sla', short: 'Ba', long: 'Bar�.' },
-    { id: 7, name: 'Borgarfjar�ars�sla', short: 'Bo', long: 'Borgf.' },
-    { id: 8, name: 'Dalas�sla', short: 'Da', long: 'Dal.' },
-    { id: 9, name: 'Eyjafjar�ars�sla', short: 'Ey', long: 'Eyf.' },
-    { id: 10, name: 'Gullbringu- og Kj�sars�sla', short: 'GK', long: 'G.-K.' },
-    { id: 11, name: 'Hafnarfj�r�ur', short: 'Hf', long: 'Hafnf.' },
-    { id: 12, name: 'H�navatnss�sla', short: 'H�', long: 'H�nv.' },
-    { id: 13, name: 'Konungkj�rinn', short: 'Kk', long: 'Kgk.' },
-    { id: 14, name: 'Landskj�rinn (<110 lt.)', short: 'LA', long: 'Landsk.' },
-    { id: 15, name: 'M�ras�sla', short: 'M�', long: 'M�r.' },
-    { id: 16, name: 'Nor�urland eystra', short: 'NE', long: 'Nor�url. e.' },
-    { id: 17, name: 'Nor�ur-M�las�sla', short: 'NM', long: 'N.-M�l.' },
-    { id: 18, name: 'Nor�urland vestra', short: 'NV', long: 'Nor�url. v.' },
-    { id: 19, name: 'Nor�ur-�safjar�ars�sla', short: 'N�', long: 'N.-�sf.' },
-    { id: 20, name: 'Nor�ur-�ingeyjars�sla', short: 'N�', long: 'N.-�ing.' },
-    { id: 21, name: 'Reykjanes', short: 'RN', long: 'Reykn.' },
-    { id: 22, name: 'Reykjav�k', short: 'RV', long: 'Reykv.' },
-    { id: 23, name: 'Rang�rvallas�sla', short: 'Ra', long: 'Rang.' },
-    { id: 24, name: 'Reykjav�k', short: 'Rv', long: 'Reykv.' },
-    { id: 25, name: 'Su�urland', short: 'SL', long: 'Su�url.' },
-    { id: 26, name: 'Su�ur-M�las�sla', short: 'SM', long: 'S.-M�l.' },
-    { id: 27, name: 'Skaftafells�sla', short: 'Sa', long: 'Skaft.' },
-    { id: 28, name: 'Sey�isfj�r�ur', short: 'Sf', long: 'Sey�f.' },
-    { id: 29, name: 'Siglufj�r�ur', short: 'Si', long: 'Siglf.' },
-    { id: 30, name: 'Skagafjar�ars�sla', short: 'Sk', long: 'Skagf.' },
-    { id: 31, name: 'Sn�fellsness�sla', short: 'Sn', long: 'Sn�f.' },
-    { id: 32, name: 'Strandas�sla', short: 'St', long: 'Strand.' },
-    { id: 33, name: 'Su�ur-�ingeyjars�sla', short: 'S�', long: 'S.-�ing.' },
-    { id: 34, name: 'Vestfir�ir', short: 'VF', long: 'Vestf.' },
-    { id: 35, name: 'Vestur-H�navatnss�sla', short: 'VH', long: 'V.-H�nv.' },
-    { id: 36, name: 'Vesturland', short: 'VL', long: 'Vesturl.' },
-    { id: 37, name: 'Vestur-Skaftafellss�sla', short: 'VS', long: 'V.-Skaft.' },
-    { id: 38, name: 'Vestmannaeyjar', short: 'Vm', long: 'Vestm.' },
-    { id: 39, name: 'Vestur-�safjar�ars�sla', short: 'V�', long: 'V.-�sf.' },
-    { id: 40, name: '�rness�sla', short: '�r', long: '�rn.' },
-    { id: 41, name: '�safjar�ars�sla', short: '�f', long: '�sf.' },
-    { id: 42, name: '�safj�r�ur', short: '�s', long: '�saf.' },
-    { id: 43, name: '�ingeyjars�sla', short: '�i', long: '�ing.' },
-    { id: 44, name: 'Reykjav�kurkj�rd�mi nor�ur', short: 'RN', long: 'Reykv. n.' },
-    { id: 45, name: 'Reykjav�kurkj�rd�mi su�ur', short: 'RS', long: 'Reykv. s.' },
-    { id: 46, name: 'Su�urkj�rd�mi', short: 'SU', long: 'Su�urk.' },
-    { id: 47, name: 'Su�vesturkj�rd�mi', short: 'SV', long: 'Su�vest.' },
-    { id: 48, name: 'Nor�vesturkj�rd�mi', short: 'NV', long: 'Nor�vest.' },
-    { id: 49, name: 'Nor�austurkj�rd�mi', short: 'NA', long: 'Nor�aust.' },
-    { id: 50, name: 'Su�vesturkj�rd�mi', short: 'SV', long: 'Su�vest.' },
-    { id: 51, name: 'Nor�vesturkj�rd�mi', short: 'NV', long: 'Nor�vest.' },
-    { id: 52, name: 'Su�vesturkj�rd�mi', short: 'SV', long: 'Su�vest.' },
-    { id: 53, name: 'Nor�vesturkj�rd�mi', short: 'NV', long: 'Nor�vest.' }
+    {
+        id: 1,
+        name: "-",
+        short: "-",
+        long: null
+    },
+    {
+        id: 2,
+        name: "Austur-Húnavatnssýsla",
+        short: "AH",
+        long: "A.-Húnv."
+    },
+    {
+        id: 3,
+        name: "Austurland",
+        short: "AL",
+        long: "Austurl."
+    },
+    {
+        id: 4,
+        name: "Austur-Skaftafellssýsla",
+        short: "AS",
+        long: "A.-Skaft."
+    },
+    {
+        id: 5,
+        name: "Akureyri",
+        short: "Ak",
+        long: "Ak."
+    },
+    {
+        id: 6,
+        name: "Barðastrandarsýsla",
+        short: "Ba",
+        long: "Barð."
+    },
+    {
+        id: 7,
+        name: "Borgarfjarðarsýsla",
+        short: "Bo",
+        long: "Borgf."
+    },
+    {
+        id: 8,
+        name: "Dalasýsla",
+        short: "Da",
+        long: "Dal."
+    },
+    {
+        id: 9,
+        name: "Eyjafjarðarsýsla",
+        short: "Ey",
+        long: "Eyf."
+    },
+    {
+        id: 10,
+        name: "Gullbringu- og Kjósarsýsla",
+        short: "GK",
+        long: "G.-K."
+    },
+    {
+        id: 11,
+        name: "Hafnarfjörður",
+        short: "Hf",
+        long: "Hafnf."
+    },
+    {
+        id: 12,
+        name: "Húnavatnssýsla",
+        short: "Hú",
+        long: "Húnv."
+    },
+    {
+        id: 13,
+        name: "Konungkjörinn",
+        short: "Kk",
+        long: "Kgk."
+    },
+    {
+        id: 14,
+        name: "Landskjörinn (<110 lt.)",
+        short: "LA",
+        long: "Landsk."
+    },
+    {
+        id: 15,
+        name: "Mýrasýsla",
+        short: "Mý",
+        long: "Mýr."
+    },
+    {
+        id: 16,
+        name: "Norðurland eystra",
+        short: "NE",
+        long: "Norðurl. e."
+    },
+    {
+        id: 17,
+        name: "Norður-Múlasýsla",
+        short: "NM",
+        long: "N.-Múl."
+    },
+    {
+        id: 18,
+        name: "Norðurland vestra",
+        short: "NV",
+        long: "Norðurl. v."
+    },
+    {
+        id: 19,
+        name: "Norður-Ísafjarðarsýsla",
+        short: "NÍ",
+        long: "N.-Ísf."
+    },
+    {
+        id: 20,
+        name: "Norður-Þingeyjarsýsla",
+        short: "NÞ",
+        long: "N.-Þing."
+    },
+    {
+        id: 21,
+        name: "Reykjanes",
+        short: "RN",
+        long: "Reykn."
+    },
+    {
+        id: 22,
+        name: "Reykjavík",
+        short: "RV",
+        long: "Reykv."
+    },
+    {
+        id: 23,
+        name: "Rangárvallasýsla",
+        short: "Ra",
+        long: "Rang."
+    },
+    {
+        id: 24,
+        name: "Reykjavík",
+        short: "Rv",
+        long: "Reykv."
+    },
+    {
+        id: 25,
+        name: "Suðurland",
+        short: "SL",
+        long: "Suðurl."
+    },
+    {
+        id: 26,
+        name: "Suður-Múlasýsla",
+        short: "SM",
+        long: "S.-Múl."
+    },
+    {
+        id: 27,
+        name: "Skaftafellsýsla",
+        short: "Sa",
+        long: "Skaft."
+    },
+    {
+        id: 28,
+        name: "Seyðisfjörður",
+        short: "Sf",
+        long: "Seyðf."
+    },
+    {
+        id: 29,
+        name: "Siglufjörður",
+        short: "Si",
+        long: "Siglf."
+    },
+    {
+        id: 30,
+        name: "Skagafjarðarsýsla",
+        short: "Sk",
+        long: "Skagf."
+    },
+    {
+        id: 31,
+        name: "Snæfellsnessýsla",
+        short: "Sn",
+        long: "Snæf."
+    },
+    {
+        id: 32,
+        name: "Strandasýsla",
+        short: "St",
+        long: "Strand."
+    },
+    {
+        id: 33,
+        name: "Suður-Þingeyjarsýsla",
+        short: "SÞ",
+        long: "S.-Þing."
+    },
+    {
+        id: 34,
+        name: "Vestfirðir",
+        short: "VF",
+        long: "Vestf."
+    },
+    {
+        id: 35,
+        name: "Vestur-Húnavatnssýsla",
+        short: "VH",
+        long: "V.-Húnv."
+    },
+    {
+        id: 36,
+        name: "Vesturland",
+        short: "VL",
+        long: "Vesturl."
+    },
+    {
+        id: 37,
+        name: "Vestur-Skaftafellssýsla",
+        short: "VS",
+        long: "V.-Skaft."
+    },
+    {
+        id: 38,
+        name: "Vestmannaeyjar",
+        short: "Vm",
+        long: "Vestm."
+    },
+    {
+        id: 39,
+        name: "Vestur-Ísafjarðarsýsla",
+        short: "VÍ",
+        long: "V.-Ísf."
+    },
+    {
+        id: 40,
+        name: "Árnessýsla",
+        short: "Ár",
+        long: "Árn."
+    },
+    {
+        id: 41,
+        name: "Ísafjarðarsýsla",
+        short: "Íf",
+        long: "Ísf."
+    },
+    {
+        id: 42,
+        name: "Ísafjörður",
+        short: "Ís",
+        long: "Ísaf."
+    },
+    {
+        id: 43,
+        name: "Þingeyjarsýsla",
+        short: "Þi",
+        long: "Þing."
+    },
+    {
+        id: 44,
+        name: "Reykjavíkurkjördæmi norður",
+        short: "RN",
+        long: "Reykv. n."
+    },
+    {
+        id: 45,
+        name: "Reykjavíkurkjördæmi suður",
+        short: "RS",
+        long: "Reykv. s."
+    },
+    {
+        id: 46,
+        name: "Suðurkjördæmi",
+        short: "SU",
+        long: "Suðurk."
+    },
+    {
+        id: 47,
+        name: "Suðvesturkjördæmi",
+        short: "SV",
+        long: "Suðvest."
+    },
+    {
+        id: 48,
+        name: "Norðvesturkjördæmi",
+        short: "NV",
+        long: "Norðvest."
+    },
+    {
+        id: 49,
+        name: "Norðausturkjördæmi",
+        short: "NA",
+        long: "Norðaust."
+    },
+    {
+        id: 50,
+        name: "Suðvesturkjördæmi",
+        short: "SV",
+        long: "Suðvest."
+    },
+    {
+        id: 51,
+        name: "Norðvesturkjördæmi",
+        short: "NV",
+        long: "Norðvest."
+    },
+    {
+        id: 52,
+        name: "Suðvesturkjördæmi",
+        short: "SV",
+        long: "Suðvest."
+    },
+    {
+        id: 53,
+        name: "Norðvesturkjördæmi",
+        short: "NV",
+        long: "Norðvest."
+    }
 ];
 
 export function oneOf<T>(options: Array<T>): T {
@@ -228,6 +493,15 @@ export const MockClient: Context = {
                 return Promise.resolve(
                     congressmanIDs.map((i) => generateCongressman(i))
                 );
+            case 'assembly.plenary':
+                return Promise.resolve(
+                    generatePlenary(params?.plenary as number | null, params?.assembly as number)
+                );
+            case 'assembly.plenaries':
+                return Promise.resolve(
+                    Array.from({ length: Math.random() * 20 })
+                        .map((_, i) => generatePlenary(i, params?.assembly as number))
+                );
             case 'assembly.issue':
                 return Promise.resolve(
                     generateIssue(params?.issue as number, params?.assembly as number, params?.category as string)
@@ -251,8 +525,8 @@ export const MockClient: Context = {
                 );
             case 'assembly.issue.speeches':
                 return Promise.resolve(
-                    Array.from({ length: Math.random() * 100 }).map((_, i) => generateSpeech(
-                        i + 1,
+                    Array.from({ length: Math.random() * 5 }).map((_, i) => generateSpeech(
+                        i + Number(params?.pointer),
                         params?.assembly as number,
                         params?.issue as number,
                         params?.category as string,
@@ -321,7 +595,7 @@ function generateDocument(id: number, assembly: number, issue: number, category:
 
 function generateSpeech(id: number, assembly: number, issue: number, category: string) {
     return {
-        id: id,
+        id: `${faker.random.uuid()}${id}`,
         // plenary,
         assembly: generateAssembly(assembly),
         issue: generateIssue(issue, assembly, category),
@@ -359,4 +633,96 @@ function generateConstituencies() {
         abbr_long: constituency.long,
         description: faker.lorem.paragraphs(),
     }
+}
+
+function generatePlenary(id: number | null, assembly: number) {
+
+    // If ID is null, then we want to return the latest PLenary
+
+    const identifier: number = id === null ? faker.random.number() : id ;
+    return {
+        id: identifier,
+        name: id !== null ? oneOf([
+            null,
+            'þingsetningarfundur',
+            'framhald þingsetningarfundar',
+            '2. fundur',
+            '4. fundur',
+        ]) : 'Latest',
+        assembly: generateAssembly(assembly),
+        from: new Date(faker.date.past()).toISOString(),
+        to: new Date(faker.date.past()).toISOString(),
+        agenda: Array.from({ length: Math.random() * 20 }).map((_, i) => generatePlenaryItem(i, assembly, identifier))
+    }
+}
+
+function generatePlenaryItem(id: number, assembly: number , _plenary: number) {
+    return {
+        id,
+        assembly: generateAssembly(assembly),
+        issue: generateIssue(1, assembly, 'A'),
+        // plenary: '',
+        iteration_type: oneOf([
+            '1',
+            'F',
+            null,
+            '*',
+            '2',
+            'E',
+            '3',
+            'S',
+        ]),
+        iteration_continue: oneOf([
+            null,
+            '1',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '2',
+            '3',
+            '4',
+
+        ]),
+        iteration_comment: oneOf([
+            '1. umræða',
+            'fyrri umræða',
+            'hvort leyfð skuli',
+            null,
+            '2. umræða',
+            'framhald 1. umræðu',
+            'ein umræða',
+            'framhald fyrri umræðu',
+            '3. umræða',
+            'framhald 2. umræðu',
+            'síðari umræða',
+            'framhald 3. umræðu',
+            'framhald síðari umræðu',
+            'framhald',
+            'framhald ein umræðu',
+
+        ]),
+        comment: oneOf([
+            null,
+            'Ef leyft verður  afbr. fyrir frumskjali.',
+            'atkvæðagreiðsla  (Atkvæðagreiðsla).',
+            'Ef leyft verður  afbr. (of skammt liðið frá síðustu umræðu).',
+            'Ef leyft verður  afbr. fyrir nál.',
+            'Ef leyft verður  afbr. (of seint fram komið)',
+        ]),
+        comment_type: oneOf([
+            null,
+            'F',
+            'A',
+            'U',
+            'N',
+            '6',
+        ]),
+        posed: null,
+        answerer: null,
+        counter_answerer: null,
+        instigator: null,
+    }
+
 }

@@ -9,6 +9,8 @@ import AssemblyIssue from './query/AssemblyIssue.ts';
 import AssemblyIssues from './query/AssemblyIssues.ts';
 import AssemblyIssueDocuments from './query/AssemblyIssueDocuments.ts';
 import AssemblyIssueSpeeches from './query/AssemblyIssueSpeeches.ts';
+import AssemblyPlenary from './query/AssemblyPlenary.ts';
+import AssemblyPlenaries from './query/AssemblyPlenaries.ts';
 
 export default new GraphQLSchema({
     query: new GraphQLObjectType({
@@ -19,6 +21,8 @@ export default new GraphQLSchema({
             Assembly,
             AssemblyCongressman,
             AssemblyCongressmen,
+            AssemblyPlenary,
+            AssemblyPlenaries,
             AssemblyIssues,
             AssemblyIssue,
             AssemblyIssueDocuments,

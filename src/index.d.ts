@@ -5,6 +5,8 @@ export interface Context {
             'assemblies' |
             'assembly.congressman' |
             'assembly.congressmen' |
+            'assembly.plenary' |
+            'assembly.plenaries' |
             'assembly.issue' |
             'assembly.issues' |
             'assembly.issue.documents' |
