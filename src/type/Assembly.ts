@@ -6,7 +6,7 @@ export const Assembly: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({assembly_id}) => assembly_id,
         },
         from: {
             type: new GraphQLNonNull(GraphQLString),

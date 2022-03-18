@@ -9,7 +9,7 @@ export const Speech: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({ speech_id }) => speech_id,
         },
         // plenary: {
         //     type: new GraphQLNonNull(GraphQLString),

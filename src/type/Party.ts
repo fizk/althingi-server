@@ -6,7 +6,7 @@ export const Party: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({ party_id }) => party_id,
         },
         name: {
             type: new GraphQLNonNull(GraphQLString),

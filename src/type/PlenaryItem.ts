@@ -10,7 +10,7 @@ export const PlenaryItem: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({ id }) => id,
+            resolve: ({ plenary_item_id }) => plenary_item_id,
         },
         assembly: {
             type: new GraphQLNonNull(Assembly),

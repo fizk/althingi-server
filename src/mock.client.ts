@@ -147,324 +147,1501 @@ const speechType = [
 
 const constituencies = [
     {
-        id: 1,
+        constituency_id: 1,
         name: "-",
         short: "-",
         long: null
     },
     {
-        id: 2,
+        constituency_id: 2,
         name: "Austur-Húnavatnssýsla",
         short: "AH",
         long: "A.-Húnv."
     },
     {
-        id: 3,
+        constituency_id: 3,
         name: "Austurland",
         short: "AL",
         long: "Austurl."
     },
     {
-        id: 4,
+        constituency_id: 4,
         name: "Austur-Skaftafellssýsla",
         short: "AS",
         long: "A.-Skaft."
     },
     {
-        id: 5,
+        constituency_id: 5,
         name: "Akureyri",
         short: "Ak",
         long: "Ak."
     },
     {
-        id: 6,
+        constituency_id: 6,
         name: "Barðastrandarsýsla",
         short: "Ba",
         long: "Barð."
     },
     {
-        id: 7,
+        constituency_id: 7,
         name: "Borgarfjarðarsýsla",
         short: "Bo",
         long: "Borgf."
     },
     {
-        id: 8,
+        constituency_id: 8,
         name: "Dalasýsla",
         short: "Da",
         long: "Dal."
     },
     {
-        id: 9,
+        constituency_id: 9,
         name: "Eyjafjarðarsýsla",
         short: "Ey",
         long: "Eyf."
     },
     {
-        id: 10,
+        constituency_id: 10,
         name: "Gullbringu- og Kjósarsýsla",
         short: "GK",
         long: "G.-K."
     },
     {
-        id: 11,
+        constituency_id: 11,
         name: "Hafnarfjörður",
         short: "Hf",
         long: "Hafnf."
     },
     {
-        id: 12,
+        constituency_id: 12,
         name: "Húnavatnssýsla",
         short: "Hú",
         long: "Húnv."
     },
     {
-        id: 13,
+        constituency_id: 13,
         name: "Konungkjörinn",
         short: "Kk",
         long: "Kgk."
     },
     {
-        id: 14,
+        constituency_id: 14,
         name: "Landskjörinn (<110 lt.)",
         short: "LA",
         long: "Landsk."
     },
     {
-        id: 15,
+        constituency_id: 15,
         name: "Mýrasýsla",
         short: "Mý",
         long: "Mýr."
     },
     {
-        id: 16,
+        constituency_id: 16,
         name: "Norðurland eystra",
         short: "NE",
         long: "Norðurl. e."
     },
     {
-        id: 17,
+        constituency_id: 17,
         name: "Norður-Múlasýsla",
         short: "NM",
         long: "N.-Múl."
     },
     {
-        id: 18,
+        constituency_id: 18,
         name: "Norðurland vestra",
         short: "NV",
         long: "Norðurl. v."
     },
     {
-        id: 19,
+        constituency_id: 19,
         name: "Norður-Ísafjarðarsýsla",
         short: "NÍ",
         long: "N.-Ísf."
     },
     {
-        id: 20,
+        constituency_id: 20,
         name: "Norður-Þingeyjarsýsla",
         short: "NÞ",
         long: "N.-Þing."
     },
     {
-        id: 21,
+        constituency_id: 21,
         name: "Reykjanes",
         short: "RN",
         long: "Reykn."
     },
     {
-        id: 22,
+        constituency_id: 22,
         name: "Reykjavík",
         short: "RV",
         long: "Reykv."
     },
     {
-        id: 23,
+        constituency_id: 23,
         name: "Rangárvallasýsla",
         short: "Ra",
         long: "Rang."
     },
     {
-        id: 24,
+        constituency_id: 24,
         name: "Reykjavík",
         short: "Rv",
         long: "Reykv."
     },
     {
-        id: 25,
+        constituency_id: 25,
         name: "Suðurland",
         short: "SL",
         long: "Suðurl."
     },
     {
-        id: 26,
+        constituency_id: 26,
         name: "Suður-Múlasýsla",
         short: "SM",
         long: "S.-Múl."
     },
     {
-        id: 27,
+        constituency_id: 27,
         name: "Skaftafellsýsla",
         short: "Sa",
         long: "Skaft."
     },
     {
-        id: 28,
+        constituency_id: 28,
         name: "Seyðisfjörður",
         short: "Sf",
         long: "Seyðf."
     },
     {
-        id: 29,
+        constituency_id: 29,
         name: "Siglufjörður",
         short: "Si",
         long: "Siglf."
     },
     {
-        id: 30,
+        constituency_id: 30,
         name: "Skagafjarðarsýsla",
         short: "Sk",
         long: "Skagf."
     },
     {
-        id: 31,
+        constituency_id: 31,
         name: "Snæfellsnessýsla",
         short: "Sn",
         long: "Snæf."
     },
     {
-        id: 32,
+        constituency_id: 32,
         name: "Strandasýsla",
         short: "St",
         long: "Strand."
     },
     {
-        id: 33,
+        constituency_id: 33,
         name: "Suður-Þingeyjarsýsla",
         short: "SÞ",
         long: "S.-Þing."
     },
     {
-        id: 34,
+        constituency_id: 34,
         name: "Vestfirðir",
         short: "VF",
         long: "Vestf."
     },
     {
-        id: 35,
+        constituency_id: 35,
         name: "Vestur-Húnavatnssýsla",
         short: "VH",
         long: "V.-Húnv."
     },
     {
-        id: 36,
+        constituency_id: 36,
         name: "Vesturland",
         short: "VL",
         long: "Vesturl."
     },
     {
-        id: 37,
+        constituency_id: 37,
         name: "Vestur-Skaftafellssýsla",
         short: "VS",
         long: "V.-Skaft."
     },
     {
-        id: 38,
+        constituency_id: 38,
         name: "Vestmannaeyjar",
         short: "Vm",
         long: "Vestm."
     },
     {
-        id: 39,
+        constituency_id: 39,
         name: "Vestur-Ísafjarðarsýsla",
         short: "VÍ",
         long: "V.-Ísf."
     },
     {
-        id: 40,
+        constituency_id: 40,
         name: "Árnessýsla",
         short: "Ár",
         long: "Árn."
     },
     {
-        id: 41,
+        constituency_id: 41,
         name: "Ísafjarðarsýsla",
         short: "Íf",
         long: "Ísf."
     },
     {
-        id: 42,
+        constituency_id: 42,
         name: "Ísafjörður",
         short: "Ís",
         long: "Ísaf."
     },
     {
-        id: 43,
+        constituency_id: 43,
         name: "Þingeyjarsýsla",
         short: "Þi",
         long: "Þing."
     },
     {
-        id: 44,
+        constituency_id: 44,
         name: "Reykjavíkurkjördæmi norður",
         short: "RN",
         long: "Reykv. n."
     },
     {
-        id: 45,
+        constituency_id: 45,
         name: "Reykjavíkurkjördæmi suður",
         short: "RS",
         long: "Reykv. s."
     },
     {
-        id: 46,
+        constituency_id: 46,
         name: "Suðurkjördæmi",
         short: "SU",
         long: "Suðurk."
     },
     {
-        id: 47,
+        constituency_id: 47,
         name: "Suðvesturkjördæmi",
         short: "SV",
         long: "Suðvest."
     },
     {
-        id: 48,
+        constituency_id: 48,
         name: "Norðvesturkjördæmi",
         short: "NV",
         long: "Norðvest."
     },
     {
-        id: 49,
+        constituency_id: 49,
         name: "Norðausturkjördæmi",
         short: "NA",
         long: "Norðaust."
     },
     {
-        id: 50,
+        constituency_id: 50,
         name: "Suðvesturkjördæmi",
         short: "SV",
         long: "Suðvest."
     },
     {
-        id: 51,
+        constituency_id: 51,
         name: "Norðvesturkjördæmi",
         short: "NV",
         long: "Norðvest."
     },
     {
-        id: 52,
+        constituency_id: 52,
         name: "Suðvesturkjördæmi",
         short: "SV",
         long: "Suðvest."
     },
     {
-        id: 53,
+        constituency_id: 53,
         name: "Norðvesturkjördæmi",
         short: "NV",
         long: "Norðvest."
     }
 ];
+
+const congressmenSessions = [
+    {
+        _id: 652,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: null,
+            birth: "1970-01-26T00:00:00.000Z",
+            congressman_id: 652,
+            death: null,
+            name: "Bjarni Benediktsson"
+        },
+        sessions: [
+            {
+                _id: 215145,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1970-01-26T00:00:00.000Z",
+                    congressman_id: 652,
+                    death: null,
+                    name: "Bjarni Benediktsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Sjálfstfl.",
+                    abbr_short: "S",
+                    color: null,
+                    name: "Sjálfstæðisflokkur",
+                    party_id: 35
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 215145,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 710,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "TÞH",
+            birth: "1963-01-17T01:00:00.000Z",
+            congressman_id: 710,
+            death: null,
+            name: "Tryggvi Þór Herbertsson"
+        },
+        sessions: [
+            {
+                _id: 239274,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "TÞH",
+                    birth: "1963-01-17T01:00:00.000Z",
+                    congressman_id: 710,
+                    death: null,
+                    name: "Tryggvi Þór Herbertsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Sjálfstfl.",
+                    abbr_short: "S",
+                    color: null,
+                    name: "Sjálfstæðisflokkur",
+                    party_id: 35
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 239274,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 724,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "JRG",
+            birth: "1958-07-06T00:00:00.000Z",
+            congressman_id: 724,
+            death: null,
+            name: "Jónína Rós Guðmundsdóttir"
+        },
+        sessions: [
+            {
+                _id: 238582,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "JRG",
+                    birth: "1958-07-06T00:00:00.000Z",
+                    congressman_id: 724,
+                    death: null,
+                    name: "Jónína Rós Guðmundsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 238582,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 676,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "ÁI",
+            birth: "1951-05-01T00:00:00.000Z",
+            congressman_id: 676,
+            death: null,
+            name: "Álfheiður Ingadóttir"
+        },
+        sessions: [
+            {
+                _id: 161202,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "ÁI",
+                    birth: "1951-05-01T00:00:00.000Z",
+                    congressman_id: 676,
+                    death: null,
+                    name: "Álfheiður Ingadóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. n.",
+                    abbr_short: "RN",
+                    constituency_id: 44,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi norður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 161202,
+                to: "2012-02-03T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 161203,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "ÁI",
+                    birth: "1951-05-01T00:00:00.000Z",
+                    congressman_id: 676,
+                    death: null,
+                    name: "Álfheiður Ingadóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. n.",
+                    abbr_short: "RN",
+                    constituency_id: 44,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi norður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-02-03T00:00:00.000Z",
+                session_id: 161203,
+                to: "2012-02-22T00:00:00.000Z",
+                type: "með varamann"
+            },
+            {
+                _id: 161204,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "ÁI",
+                    birth: "1951-05-01T00:00:00.000Z",
+                    congressman_id: 676,
+                    death: null,
+                    name: "Álfheiður Ingadóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. n.",
+                    abbr_short: "RN",
+                    constituency_id: 44,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi norður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-02-22T00:00:00.000Z",
+                session_id: 161204,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 634,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: null,
+            birth: "1948-01-08T01:00:00.000Z",
+            congressman_id: 634,
+            death: null,
+            name: "Þuríður Backman"
+        },
+        sessions: [
+            {
+                _id: 177490,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1948-01-08T01:00:00.000Z",
+                    congressman_id: 634,
+                    death: null,
+                    name: "Þuríður Backman"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 177490,
+                to: "2012-03-28T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 177491,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1948-01-08T01:00:00.000Z",
+                    congressman_id: 634,
+                    death: null,
+                    name: "Þuríður Backman"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-03-28T00:00:00.000Z",
+                session_id: 177491,
+                to: "2012-03-31T00:00:00.000Z",
+                type: "með varamann"
+            },
+            {
+                _id: 177492,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1948-01-08T01:00:00.000Z",
+                    congressman_id: 634,
+                    death: null,
+                    name: "Þuríður Backman"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-03-31T00:00:00.000Z",
+                session_id: 177492,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 717,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "SER",
+            birth: "1961-03-06T01:00:00.000Z",
+            congressman_id: 717,
+            death: null,
+            name: "Sigmundur Ernir Rúnarsson"
+        },
+        sessions: [
+            {
+                _id: 239031,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "SER",
+                    birth: "1961-03-06T01:00:00.000Z",
+                    congressman_id: 717,
+                    death: null,
+                    name: "Sigmundur Ernir Rúnarsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 239031,
+                to: "2011-12-14T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 239032,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "SER",
+                    birth: "1961-03-06T01:00:00.000Z",
+                    congressman_id: 717,
+                    death: null,
+                    name: "Sigmundur Ernir Rúnarsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-12-14T00:00:00.000Z",
+                session_id: 239032,
+                to: "2011-12-18T00:00:00.000Z",
+                type: "með varamann"
+            },
+            {
+                _id: 239033,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "SER",
+                    birth: "1961-03-06T01:00:00.000Z",
+                    congressman_id: 717,
+                    death: null,
+                    name: "Sigmundur Ernir Rúnarsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Norðaust.",
+                    abbr_short: "NA",
+                    constituency_id: 49,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    name: "Norðausturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-12-18T00:00:00.000Z",
+                session_id: 239033,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 1130,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "LGeir",
+            birth: "1959-04-21T00:00:00.000Z",
+            congressman_id: 1130,
+            death: null,
+            name: "Lúðvík Geirsson"
+        },
+        sessions: [
+            {
+                _id: 243958,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "LGeir",
+                    birth: "1959-04-21T00:00:00.000Z",
+                    congressman_id: 1130,
+                    death: null,
+                    name: "Lúðvík Geirsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 243958,
+                to: "2011-11-03T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 243959,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "LGeir",
+                    birth: "1959-04-21T00:00:00.000Z",
+                    congressman_id: 1130,
+                    death: null,
+                    name: "Lúðvík Geirsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-11-03T00:00:00.000Z",
+                session_id: 243959,
+                to: "2011-12-02T00:00:00.000Z",
+                type: "með varamann"
+            },
+            {
+                _id: 243960,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "LGeir",
+                    birth: "1959-04-21T00:00:00.000Z",
+                    congressman_id: 1130,
+                    death: null,
+                    name: "Lúðvík Geirsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-12-02T00:00:00.000Z",
+                session_id: 243960,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 656,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: null,
+            birth: "1967-12-19T01:00:00.000Z",
+            congressman_id: 656,
+            death: null,
+            name: "Guðlaugur Þór Þórðarson"
+        },
+        sessions: [
+            {
+                _id: 192752,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1967-12-19T01:00:00.000Z",
+                    congressman_id: 656,
+                    death: null,
+                    name: "Guðlaugur Þór Þórðarson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. s.",
+                    abbr_short: "RS",
+                    constituency_id: 45,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi suður"
+                },
+                congressman_party: {
+                    abbr_long: "Sjálfstfl.",
+                    abbr_short: "S",
+                    color: null,
+                    name: "Sjálfstæðisflokkur",
+                    party_id: 35
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 192752,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 660,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "KaJúl",
+            birth: "1974-11-23T00:00:00.000Z",
+            congressman_id: 660,
+            death: null,
+            name: "Katrín Júlíusdóttir"
+        },
+        sessions: [
+            {
+                _id: 216134,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "KaJúl",
+                    birth: "1974-11-23T00:00:00.000Z",
+                    congressman_id: 660,
+                    death: null,
+                    name: "Katrín Júlíusdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 216134,
+                to: "2012-01-10T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 216135,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "KaJúl",
+                    birth: "1974-11-23T00:00:00.000Z",
+                    congressman_id: 660,
+                    death: null,
+                    name: "Katrín Júlíusdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2012-01-10T00:00:00.000Z",
+                session_id: 216135,
+                to: "2012-01-20T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 216136,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "KaJúl",
+                    birth: "1974-11-23T00:00:00.000Z",
+                    congressman_id: 660,
+                    death: null,
+                    name: "Katrín Júlíusdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2012-01-20T00:00:00.000Z",
+                session_id: 216136,
+                to: "2012-08-31T00:00:00.000Z",
+                type: "með varamann"
+            },
+            {
+                _id: 216137,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "KaJúl",
+                    birth: "1974-11-23T00:00:00.000Z",
+                    congressman_id: 660,
+                    death: null,
+                    name: "Katrín Júlíusdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2012-09-01T00:00:00.000Z",
+                session_id: 216137,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "með varamann"
+            }
+        ]
+    },
+    {
+        _id: 530,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "SF",
+            birth: "1962-08-10T00:00:00.000Z",
+            congressman_id: 530,
+            death: null,
+            name: "Siv Friðleifsdóttir"
+        },
+        sessions: [
+            {
+                _id: 188452,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "SF",
+                    birth: "1962-08-10T00:00:00.000Z",
+                    congressman_id: 530,
+                    death: null,
+                    name: "Siv Friðleifsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Framsfl.",
+                    abbr_short: "F",
+                    color: null,
+                    name: "Framsóknarflokkur",
+                    party_id: 2
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 188452,
+                to: "2011-10-11T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 188453,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "SF",
+                    birth: "1962-08-10T00:00:00.000Z",
+                    congressman_id: 530,
+                    death: null,
+                    name: "Siv Friðleifsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Framsfl.",
+                    abbr_short: "F",
+                    color: null,
+                    name: "Framsóknarflokkur",
+                    party_id: 2
+                },
+                from: "2011-10-11T00:00:00.000Z",
+                session_id: 188453,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 725,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "MSch",
+            birth: "1972-04-23T00:00:00.000Z",
+            congressman_id: 725,
+            death: null,
+            name: "Magnús Orri Schram"
+        },
+        sessions: [
+            {
+                _id: 238779,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "MSch",
+                    birth: "1972-04-23T00:00:00.000Z",
+                    congressman_id: 725,
+                    death: null,
+                    name: "Magnús Orri Schram"
+                },
+                congressman_constituency: {
+                    abbr_long: "Suðvest.",
+                    abbr_short: "SV",
+                    constituency_id: 50,
+                    description: "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    name: "Suðvesturkjördæmi"
+                },
+                congressman_party: {
+                    abbr_long: "Samf.",
+                    abbr_short: "Sf",
+                    color: null,
+                    name: "Samfylkingin",
+                    party_id: 38
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 238779,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 729,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: "SDG",
+            birth: "1975-03-12T00:00:00.000Z",
+            congressman_id: 729,
+            death: null,
+            name: "Sigmundur Davíð Gunnlaugsson"
+        },
+        sessions: [
+            {
+                _id: 238982,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: "SDG",
+                    birth: "1975-03-12T00:00:00.000Z",
+                    congressman_id: 729,
+                    death: null,
+                    name: "Sigmundur Davíð Gunnlaugsson"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. n.",
+                    abbr_short: "RN",
+                    constituency_id: 44,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi norður"
+                },
+                congressman_party: {
+                    abbr_long: "Framsfl.",
+                    abbr_short: "F",
+                    color: null,
+                    name: "Framsóknarflokkur",
+                    party_id: 2
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 238982,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    },
+    {
+        _id: 730,
+        assembly: {
+            assembly_id: 140,
+            from: "2011-10-01T00:00:00.000Z",
+            to: "2012-09-10T00:00:00.000Z"
+        },
+        congressman: {
+            abbreviation: null,
+            birth: "1964-08-24T00:00:00.000Z",
+            congressman_id: 730,
+            death: null,
+            name: "Svandís Svavarsdóttir"
+        },
+        sessions: [
+            {
+                _id: 239246,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1964-08-24T00:00:00.000Z",
+                    congressman_id: 730,
+                    death: null,
+                    name: "Svandís Svavarsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. s.",
+                    abbr_short: "RS",
+                    constituency_id: 45,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi suður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2011-10-01T00:00:00.000Z",
+                session_id: 239246,
+                to: "2012-01-10T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 239247,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1964-08-24T00:00:00.000Z",
+                    congressman_id: 730,
+                    death: null,
+                    name: "Svandís Svavarsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. s.",
+                    abbr_short: "RS",
+                    constituency_id: 45,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi suður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-01-10T00:00:00.000Z",
+                session_id: 239247,
+                to: "2012-03-27T00:00:00.000Z",
+                type: "þingmaður"
+            },
+            {
+                _id: 239248,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1964-08-24T00:00:00.000Z",
+                    congressman_id: 730,
+                    death: null,
+                    name: "Svandís Svavarsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. s.",
+                    abbr_short: "RS",
+                    constituency_id: 45,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi suður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-03-27T00:00:00.000Z",
+                session_id: 239248,
+                to: "2012-03-29T00:00:00.000Z",
+                type: "með varamann"
+            },
+            {
+                _id: 239249,
+                abbr: null,
+                assembly: {
+                    assembly_id: 140,
+                    from: "2011-10-01T00:00:00.000Z",
+                    to: "2012-09-10T00:00:00.000Z"
+                },
+                congressman: {
+                    abbreviation: null,
+                    birth: "1964-08-24T00:00:00.000Z",
+                    congressman_id: 730,
+                    death: null,
+                    name: "Svandís Svavarsdóttir"
+                },
+                congressman_constituency: {
+                    abbr_long: "Reykv. s.",
+                    abbr_short: "RS",
+                    constituency_id: 45,
+                    description: "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    name: "Reykjavíkurkjördæmi suður"
+                },
+                congressman_party: {
+                    abbr_long: "Vinstri-gr.",
+                    abbr_short: "Vg",
+                    color: null,
+                    name: "Vinstrihreyfingin - grænt framboð",
+                    party_id: 23
+                },
+                from: "2012-03-31T00:00:00.000Z",
+                session_id: 239249,
+                to: "2012-09-10T00:00:00.000Z",
+                type: "þingmaður"
+            }
+        ]
+    }
+];
+
 
 export function oneOf<T>(options: Array<T>): T {
     return options.slice().sort(() => 0.5 - Math.random()).pop()!;
@@ -490,9 +1667,7 @@ export const MockClient: Context = {
                     generateCongressman(params?.congressman as number)
                 );
             case 'assembly.congressmen':
-                return Promise.resolve(
-                    congressmanIDs.map((i) => generateCongressman(i))
-                );
+                return Promise.resolve(congressmenSessions);
             case 'assembly.plenary':
                 return Promise.resolve(
                     generatePlenary(params?.plenary as number | null, params?.assembly as number)
@@ -540,7 +1715,7 @@ export const MockClient: Context = {
 
 function generateAssembly(id: number) {
     return {
-        id: id,
+        assembly_id: id,
         from: new Date(faker.date.past()).toISOString(),
         to: new Date(faker.date.past()).toISOString(),
     }
@@ -548,7 +1723,7 @@ function generateAssembly(id: number) {
 
 function generateCongressman(id: number) {
     return {
-        id: id,
+        congressman_id: id,
         name: `${faker.name.firstName()} ${faker.name.lastName()}`,
         birth: new Date(faker.date.past()).toISOString(),
         death: null,
@@ -562,7 +1737,7 @@ function generateIssue(id: number, assembly: number, category: string) {
     const issueType = oneOf<{ type: string, name: string, subname: string | null}>(issues);
 
     return {
-        id: id,
+        issue_id: id,
         name: faker.lorem.sentence(),
         category: category,
         assembly: generateAssembly(assembly),
@@ -584,7 +1759,7 @@ function generateIssue(id: number, assembly: number, category: string) {
 
 function generateDocument(id: number, assembly: number, issue: number, category: string) {
     return {
-        id: id,
+        document_id: id,
         assembly: generateAssembly(assembly),
         issue: generateIssue(issue, assembly, category),
         date: new Date(faker.date.past()).toISOString(),
@@ -595,7 +1770,7 @@ function generateDocument(id: number, assembly: number, issue: number, category:
 
 function generateSpeech(id: number, assembly: number, issue: number, category: string) {
     return {
-        id: `${faker.random.uuid()}${id}`,
+        speech_id: `${faker.random.uuid()}${id}`,
         // plenary,
         assembly: generateAssembly(assembly),
         issue: generateIssue(issue, assembly, category),
@@ -616,7 +1791,7 @@ function generateParty(id: number) {
     const party = oneOf<{color: string, name: string}>(parties);
 
     return {
-        id,
+        party_id: id,
         name: party.name,
         abbrShort: faker.lorem.word(),
         abbrLong: faker.lorem.word(),
@@ -625,9 +1800,10 @@ function generateParty(id: number) {
 }
 
 function generateConstituencies() {
-    const constituency = oneOf<{ id: number, name: string, short: string, long: string | null }>(constituencies);
+    const constituency = oneOf<{ constituency_id: number, name: string, short: string, long: string | null }>(constituencies);
+
     return {
-        id : constituency.id,
+        constituency_id: constituency.constituency_id,
         name: constituency.name,
         abbr_short: constituency.short,
         abbr_long: constituency.long,
@@ -641,7 +1817,7 @@ function generatePlenary(id: number | null, assembly: number) {
 
     const identifier: number = id === null ? faker.random.number() : id ;
     return {
-        id: identifier,
+        plenary_id: identifier,
         name: id !== null ? oneOf([
             null,
             'þingsetningarfundur',
@@ -658,7 +1834,7 @@ function generatePlenary(id: number | null, assembly: number) {
 
 function generatePlenaryItem(id: number, assembly: number , _plenary: number) {
     return {
-        id,
+        plenary_item_id: id,
         assembly: generateAssembly(assembly),
         issue: generateIssue(1, assembly, 'A'),
         // plenary: '',

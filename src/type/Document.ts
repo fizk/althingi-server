@@ -8,7 +8,7 @@ export const Document: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({ document_id }) => document_id,
         },
         assembly: {
             type: new GraphQLNonNull(Assembly),

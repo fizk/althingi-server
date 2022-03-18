@@ -8,7 +8,7 @@ export const Plenary: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({ plenary_id }) => plenary_id,
         },
         name: {
             type: GraphQLString,

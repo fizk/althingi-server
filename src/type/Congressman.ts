@@ -8,7 +8,7 @@ export const Congressman: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({ congressman_id }) => congressman_id,
         },
         name: {
             type: new GraphQLNonNull(GraphQLString),

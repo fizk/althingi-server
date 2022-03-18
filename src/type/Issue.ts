@@ -8,7 +8,7 @@ export const Issue: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({id}) => id,
+            resolve: ({ issue_id }) => issue_id,
         },
         assembly: {
             type: new GraphQLNonNull(Assembly),
