@@ -5,6 +5,8 @@ import Assembly from './query/Assembly.ts';
 import Assemblies from './query/Assemblies.ts';
 import AssemblyCongressman from './query/AssemblyCongressman.ts';
 import AssemblyCongressmen from './query/AssemblyCongressmen.ts';
+import AssemblyConstituencies from './query/AssemblyConstituencies.ts';
+import AssemblyParties from './query/AssemblyParties.ts';
 import AssemblyIssue from './query/AssemblyIssue.ts';
 import AssemblyIssues from './query/AssemblyIssues.ts';
 import AssemblyIssueDocuments from './query/AssemblyIssueDocuments.ts';
@@ -21,6 +23,8 @@ export default new GraphQLSchema({
             Assembly,
             AssemblyCongressman,
             AssemblyCongressmen,
+            AssemblyConstituencies,
+            AssemblyParties,
             AssemblyPlenary,
             AssemblyPlenaries,
             AssemblyIssues,
