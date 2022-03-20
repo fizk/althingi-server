@@ -13284,6 +13284,51 @@ const partySessions = [
     }
 ];
 
+const assemblyParties = [
+    {
+        abbr_long: "Hreyf.",
+        abbr_short: "Hr",
+        color: null,
+        name: "Hreyfingin",
+        party_id: 42
+    },
+    {
+        abbr_long: "Sjálfstfl.",
+        abbr_short: "S",
+        color: null,
+        name: "Sjálfstæðisflokkur",
+        party_id: 35
+    },
+    {
+        abbr_long: "Framsfl.",
+        abbr_short: "F",
+        color: null,
+        name: "Framsóknarflokkur",
+        party_id: 2
+    },
+    {
+        abbr_long: "Vinstri-gr.",
+        abbr_short: "Vg",
+        color: null,
+        name: "Vinstrihreyfingin - grænt framboð",
+        party_id: 23
+    },
+    {
+        abbr_long: "Samf.",
+        abbr_short: "Sf",
+        color: null,
+        name: "Samfylkingin",
+        party_id: 38
+    },
+    {
+        abbr_long: "Utan þfl.",
+        abbr_short: "U",
+        color: null,
+        name: "utan þingflokka",
+        party_id: 17
+    }
+];
+
 export function oneOf<T>(options: Array<T>): T {
     return options.slice().sort(() => 0.5 - Math.random()).pop()!;
 }
@@ -13312,6 +13357,8 @@ export const MockClient: Context = {
             case 'assembly.constituencies':
                 return Promise.resolve(constituencySessions);
             case 'assembly.parties':
+                return Promise.resolve(assemblyParties);
+            case 'assembly.parties.sessions':
                 return Promise.resolve(partySessions);
             case 'assembly.plenary':
                 return Promise.resolve(

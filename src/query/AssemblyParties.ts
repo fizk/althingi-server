@@ -15,7 +15,7 @@ const AssemblyPartiesConfig: GraphQLFieldConfig<null, Context, Args> = {
         },
     },
     resolve: (_, { assembly }, { get }) => (
-        get('assembly.parties', { assembly })
+        get('assembly.parties.sessions', { assembly })
     ),
 };
 

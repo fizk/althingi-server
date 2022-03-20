@@ -8,7 +8,7 @@ export interface Context {
             'assembly.constituencies' |
             'assembly.plenary' |
             'assembly.plenaries' |
-            'assembly.parties' |
+            'assembly.parties.sessions' |
             'assembly.issue' |
             'assembly.issues' |
             'assembly.issue.documents' |
