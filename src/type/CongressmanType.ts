@@ -5,7 +5,6 @@ const CongressmanType: GraphQLEnumType = new GraphQLEnumType({
     values:  {
         PRIMARY: { value: 'PRIMARY' },
         SUBSTITUTE: { value: 'SUBSTITUTE' },
-        PRESIDENT: { value: 'PRESIDENT' },
     }
 })
 

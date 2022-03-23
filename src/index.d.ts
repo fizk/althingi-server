@@ -4,8 +4,8 @@ export interface Context {
             'assembly' |
             'assemblies' |
             'assembly.congressman' |
-            'assembly.congressmen' |
-            'assembly.constituencies' |
+            'assembly.congressmen.sessions' |
+            'assembly.constituencies.sessions' |
             'assembly.plenary' |
             'assembly.plenaries' |
             'assembly.parties.sessions' |

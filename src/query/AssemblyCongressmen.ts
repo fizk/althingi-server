@@ -20,7 +20,7 @@ const AssemblyCongressmenConfig: GraphQLFieldConfig<null, Context, Args> = {
         }
     },
     resolve: (_, { assembly, type}, {get}) => (
-        get('assembly.congressmen', { assembly, type })
+        get('assembly.congressmen.sessions', { assembly, type })
     ),
 };
 
