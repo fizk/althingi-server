@@ -15,7 +15,7 @@ services:
     volumes:
       - ./src/:/app/src/
       - ./lib/:/app/lib/
-    command: bash -c "denon run --allow-net --allow-env --unstable src/index.ts"
+    command: bash -c "denon run --allow-net --allow-env --allow-read --unstable src/index.ts"
 
   test:
     container_name: local-althingi-server-test

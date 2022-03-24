@@ -1,6 +1,10 @@
 import type { Context } from './index.d.ts';
 import { faker } from "https://deno.land/x/deno_faker@v1.0.3/mod.ts";
 
+const __dirname = new URL('.', import.meta.url).pathname;
+
+console.log(__dirname);
+
 const congressmanIDs = [
     166,
     862,
@@ -497,25 +501,28 @@ export const MockClient: Context = {
                     generateCongressman(params?.congressman as number)
                 );
             case 'assembly.congressmen.sessions':
-                return params?.type === 'PRIMARY'
-                    ? Promise.resolve(
-                        [...congressmenSessions]
-                            .sort(() => Math.random() - 0.5)
-                            .slice(0, Math.random() * congressmenSessions.length)
-                            .sort((a, b) => a.congressman.name.localeCompare(b.congressman.name))
-                    )
-                    : Promise.resolve(
-                        [...substituteSessions]
-                            .sort(() => Math.random() - 0.5)
-                            .slice(0, Math.random() * substituteSessions.length)
-                            .sort((a, b) => a.congressman.name.localeCompare(b.congressman.name))
-                    );
+                return Deno.readTextFile('/app/src/data/thingsetur.json').then(data => JSON.parse(data));
+                // return params?.type === 'PRIMARY'
+                //     ? Promise.resolve(
+                //         [...congressmenSessions]
+                //             .sort(() => Math.random() - 0.5)
+                //             .slice(0, Math.random() * congressmenSessions.length)
+                //             .sort((a, b) => a.congressman.name.localeCompare(b.congressman.name))
+                //     )
+                //     : Promise.resolve(
+                //         [...substituteSessions]
+                //             .sort(() => Math.random() - 0.5)
+                //             .slice(0, Math.random() * substituteSessions.length)
+                //             .sort((a, b) => a.congressman.name.localeCompare(b.congressman.name))
+                //     );
             case 'assembly.constituencies.sessions':
-                return Promise.resolve(constituencySessions);
+                return Deno.readTextFile('/app/src/data/kjordaemi.json').then(data => JSON.parse(data));
+                // return Promise.resolve(constituencySessions);
             case 'assembly.parties':
                 return Promise.resolve(assemblyParties);
             case 'assembly.parties.sessions':
-                return Promise.resolve(partySessions);
+                return Deno.readTextFile('/app/src/data/flokkar.json').then(data => JSON.parse(data));
+                // return Promise.resolve(partySessions);
             case 'assembly.plenary':
                 return Promise.resolve(
                     generatePlenary(params?.plenary as number | null, params?.assembly as number)

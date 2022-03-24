@@ -13,11 +13,11 @@ export const Party: GraphQLObjectType = new GraphQLObjectType({
             resolve: ({ name }) => name,
         },
         abbrShort: {
-            type: new GraphQLNonNull(GraphQLString),
+            type: GraphQLString,
             resolve: ({ abbr_short }) => abbr_short,
         },
         abbrLong: {
-            type: new GraphQLNonNull(GraphQLString),
+            type: GraphQLString,
             resolve: ({ abbr_long }) => abbr_long,
         },
         color: {
