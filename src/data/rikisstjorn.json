@@ -1,0 +1,63 @@
+[
+    {
+        "_id": 2,
+        "ministry_id": 2,
+        "name": "ministry-name-1",
+        "abbr_short": "abbr_short-1",
+        "abbr_long": "abbr_long-1",
+        "first": 1,
+        "last": 2,
+        "first_ministry_assembly": {
+            "assembly_id": 1,
+            "from": "2001-01-01T00:00:00+00:00",
+            "to": "2001-01-01T00:00:00+00:00"
+        },
+        "last_ministry_assembly": {
+            "assembly_id": 2,
+            "from": "2001-01-01T00:00:00+00:00",
+            "to": "2001-01-01T00:00:00+00:00"
+        },
+        "congressmen": [
+            {
+                "_id": 1,
+                "minister_sitting_id": 1,
+                "from": "2001-01-01T00:00:00+00:00",
+                "to": null,
+                "assembly": {
+                    "assembly_id": 1,
+                    "from": "2001-01-01T00:00:00+00:00",
+                    "to": "2001-01-01T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": "abbreviation",
+                    "birth": "2005-01-01T00:00:00+00:00",
+                    "congressman_id": 3,
+                    "death": null,
+                    "name": "name"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "abbr_long",
+                    "abbr_short": "abbr_short",
+                    "constituency_id": 4,
+                    "description": "description",
+                    "name": "name"
+                },
+                "congressman_party": {
+                    "abbr_long": "abbr_long",
+                    "abbr_short": "abbr_short",
+                    "color": "color",
+                    "name": "name",
+                    "party_id": 5
+                },
+                "ministry": {
+                    "abbr_long": "abbr_long-1",
+                    "abbr_short": "abbr_short-1",
+                    "first": 1,
+                    "last": 2,
+                    "ministry_id": 2,
+                    "name": "ministry-name-1"
+                }
+            }
+        ]
+    }
+]

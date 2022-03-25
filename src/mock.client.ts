@@ -500,29 +500,21 @@ export const MockClient: Context = {
                 return Promise.resolve(
                     generateCongressman(params?.congressman as number)
                 );
-            case 'assembly.congressmen.sessions':
+            case 'assembly.congressmen.sessions': {
                 return Deno.readTextFile('/app/src/data/thingsetur.json').then(data => JSON.parse(data));
-                // return params?.type === 'PRIMARY'
-                //     ? Promise.resolve(
-                //         [...congressmenSessions]
-                //             .sort(() => Math.random() - 0.5)
-                //             .slice(0, Math.random() * congressmenSessions.length)
-                //             .sort((a, b) => a.congressman.name.localeCompare(b.congressman.name))
-                //     )
-                //     : Promise.resolve(
-                //         [...substituteSessions]
-                //             .sort(() => Math.random() - 0.5)
-                //             .slice(0, Math.random() * substituteSessions.length)
-                //             .sort((a, b) => a.congressman.name.localeCompare(b.congressman.name))
-                //     );
-            case 'assembly.constituencies.sessions':
+            }
+            case 'assembly.constituencies.sessions': {
                 return Deno.readTextFile('/app/src/data/kjordaemi.json').then(data => JSON.parse(data));
-                // return Promise.resolve(constituencySessions);
-            case 'assembly.parties':
+            }
+            case 'assembly.parties': {
                 return Promise.resolve(assemblyParties);
-            case 'assembly.parties.sessions':
+            }
+            case 'assembly.parties.sessions': {
                 return Deno.readTextFile('/app/src/data/flokkar.json').then(data => JSON.parse(data));
-                // return Promise.resolve(partySessions);
+            }
+            case 'assembly.government.sessions': {
+                return Deno.readTextFile('/app/src/data/rikisstjorn.json').then(data => JSON.parse(data));
+            }
             case 'assembly.plenary':
                 return Promise.resolve(
                     generatePlenary(params?.plenary as number | null, params?.assembly as number)
