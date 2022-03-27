@@ -40,6 +40,10 @@ export const Client: Context = {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/rikisstjorn`)
                     .then(response => response.json())
             }
+            case 'assembly.government.parties': {
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/stjornarflokkar`)
+                    .then(response => response.json())
+            }
             case 'assembly.plenary':
                 return Promise.reject();
             case 'assembly.plenaries':

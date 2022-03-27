@@ -22,6 +22,13 @@ export const Assembly: GraphQLObjectType = new GraphQLObjectType({
             resolve: ({ assembly_id}, _, { get }) => {
                 return get('assembly.parties', { assembly: assembly_id })
             },
-        }
+        },
+        governmentParties: {
+            type: new GraphQLList(Party),
+            resolve: ({ assembly_id}, _, { get }) => {
+                return get('assembly.government.parties', { assembly: assembly_id })
+            },
+        },
+
     }),
 });

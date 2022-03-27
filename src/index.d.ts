@@ -7,6 +7,7 @@ export interface Context {
             'assembly.congressmen.sessions' |
             'assembly.constituencies.sessions' |
             'assembly.government.sessions' |
+            'assembly.government.parties' |
             'assembly.plenary' |
             'assembly.plenaries' |
             'assembly.parties.sessions' |

@@ -30,4 +30,4 @@ RUN deno cache src/index.ts
 #   --allow-net
 #   --allow-env
 #   --unstable
-CMD ["deno", "run", "--allow-net", "--allow-env", "--unstable", "./src/index.ts"]
+CMD ["deno", "run", "--allow-net", "--allow-env", "--allow-read", "--unstable", "./src/index.ts"]

@@ -1,63 +1,902 @@
 [
     {
-        "_id": 2,
-        "ministry_id": 2,
-        "name": "ministry-name-1",
-        "abbr_short": "abbr_short-1",
-        "abbr_long": "abbr_long-1",
-        "first": 1,
-        "last": 2,
-        "first_ministry_assembly": {
-            "assembly_id": 1,
-            "from": "2001-01-01T00:00:00+00:00",
-            "to": "2001-01-01T00:00:00+00:00"
-        },
-        "last_ministry_assembly": {
-            "assembly_id": 2,
-            "from": "2001-01-01T00:00:00+00:00",
-            "to": "2001-01-01T00:00:00+00:00"
-        },
+        "_id": 196,
+        "abbr_long": "innanríkisrh.",
+        "abbr_short": "innanrrh.",
         "congressmen": [
             {
-                "_id": 1,
-                "minister_sitting_id": 1,
-                "from": "2001-01-01T00:00:00+00:00",
-                "to": null,
+                "_id": 13901,
                 "assembly": {
-                    "assembly_id": 1,
-                    "from": "2001-01-01T00:00:00+00:00",
-                    "to": "2001-01-01T00:00:00+00:00"
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
                 },
                 "congressman": {
-                    "abbreviation": "abbreviation",
-                    "birth": "2005-01-01T00:00:00+00:00",
-                    "congressman_id": 3,
+                    "abbreviation": "ÖJ",
+                    "birth": "1948-07-17T00:00:00+00:00",
+                    "congressman_id": 630,
                     "death": null,
-                    "name": "name"
+                    "name": "Ögmundur Jónasson"
                 },
                 "congressman_constituency": {
-                    "abbr_long": "abbr_long",
-                    "abbr_short": "abbr_short",
-                    "constituency_id": 4,
-                    "description": "description",
-                    "name": "name"
+                    "abbr_long": "Suðvest.",
+                    "abbr_short": "SV",
+                    "constituency_id": 50,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    "name": "Suðvesturkjördæmi"
                 },
                 "congressman_party": {
-                    "abbr_long": "abbr_long",
-                    "abbr_short": "abbr_short",
-                    "color": "color",
-                    "name": "name",
-                    "party_id": 5
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
                 },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13901,
                 "ministry": {
-                    "abbr_long": "abbr_long-1",
-                    "abbr_short": "abbr_short-1",
-                    "first": 1,
-                    "last": 2,
-                    "ministry_id": 2,
-                    "name": "ministry-name-1"
-                }
+                    "abbr_long": "innanríkisrh.",
+                    "abbr_short": "innanrrh.",
+                    "first": 139,
+                    "last": 146,
+                    "ministry_id": 196,
+                    "name": "innanríkisráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
             }
-        ]
+        ],
+        "first": 139,
+        "first_ministry_assembly": {
+            "assembly_id": 139,
+            "from": "2010-10-01T00:00:00+00:00",
+            "to": "2011-09-30T00:00:00+00:00"
+        },
+        "last": 146,
+        "last_ministry_assembly": {
+            "assembly_id": 146,
+            "from": "2016-10-29T00:00:00+00:00",
+            "to": "2017-09-11T00:00:00+00:00"
+        },
+        "ministry_id": 196,
+        "name": "innanríkisráðherra"
+    },
+    {
+        "_id": 117,
+        "abbr_long": "samstarfsrh.",
+        "abbr_short": "samstrh.",
+        "congressmen": [
+            {
+                "_id": 13846,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1976-02-01T00:00:00+00:00",
+                    "congressman_id": 690,
+                    "death": null,
+                    "name": "Katrín Jakobsdóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Reykv. n.",
+                    "abbr_short": "RN",
+                    "constituency_id": 44,
+                    "date": "2011-10-01",
+                    "description": "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    "name": "Reykjavíkurkjördæmi norður"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13846,
+                "ministry": {
+                    "abbr_long": "samstarfsrh.",
+                    "abbr_short": "samstrh.",
+                    "first": 1,
+                    "last": null,
+                    "ministry_id": 117,
+                    "name": "ráðherra norrænna samstarfsmála"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 1,
+        "first_ministry_assembly": {
+            "assembly_id": 1,
+            "from": "1875-07-01T01:28:00+00:00",
+            "to": "1875-08-26T01:28:00+00:00"
+        },
+        "last": null,
+        "last_ministry_assembly": null,
+        "ministry_id": 117,
+        "name": "ráðherra norrænna samstarfsmála"
+    },
+    {
+        "_id": 114,
+        "abbr_long": "umhverfisrh.",
+        "abbr_short": "umhvrh.",
+        "congressmen": [
+            {
+                "_id": 13994,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1964-08-24T00:00:00+00:00",
+                    "congressman_id": 730,
+                    "death": null,
+                    "name": "Svandís Svavarsdóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Reykv. s.",
+                    "abbr_short": "RS",
+                    "constituency_id": 45,
+                    "date": "2011-10-01",
+                    "description": "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    "name": "Reykjavíkurkjördæmi suður"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13994,
+                "ministry": {
+                    "abbr_long": "umhverfisrh.",
+                    "abbr_short": "umhvrh.",
+                    "first": 1,
+                    "last": 140,
+                    "ministry_id": 114,
+                    "name": "umhverfisráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 1,
+        "first_ministry_assembly": {
+            "assembly_id": 1,
+            "from": "1875-07-01T01:28:00+00:00",
+            "to": "1875-08-26T01:28:00+00:00"
+        },
+        "last": 140,
+        "last_ministry_assembly": {
+            "assembly_id": 140,
+            "from": "2011-10-01T00:00:00+00:00",
+            "to": "2012-09-10T00:00:00+00:00"
+        },
+        "ministry_id": 114,
+        "name": "umhverfisráðherra"
+    },
+    {
+        "_id": 103,
+        "abbr_long": "forsætisrh.",
+        "abbr_short": "forsrh.",
+        "congressmen": [
+            {
+                "_id": 9469,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1942-10-04T00:00:00+00:00",
+                    "congressman_id": 287,
+                    "death": null,
+                    "name": "Jóhanna Sigurðardóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Reykv. n.",
+                    "abbr_short": "RN",
+                    "constituency_id": 44,
+                    "date": "2011-10-01",
+                    "description": "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    "name": "Reykjavíkurkjördæmi norður"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 9469,
+                "ministry": {
+                    "abbr_long": "forsætisrh.",
+                    "abbr_short": "forsrh.",
+                    "first": 1,
+                    "last": null,
+                    "ministry_id": 103,
+                    "name": "forsætisráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 1,
+        "first_ministry_assembly": {
+            "assembly_id": 1,
+            "from": "1875-07-01T01:28:00+00:00",
+            "to": "1875-08-26T01:28:00+00:00"
+        },
+        "last": null,
+        "last_ministry_assembly": null,
+        "ministry_id": 103,
+        "name": "forsætisráðherra"
+    },
+    {
+        "_id": 104,
+        "abbr_long": "utanríkisrh.",
+        "abbr_short": "utanrrh.",
+        "congressmen": [
+            {
+                "_id": 10418,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": "ÖS",
+                    "birth": "1953-06-19T00:00:00+00:00",
+                    "congressman_id": 631,
+                    "death": null,
+                    "name": "Össur Skarphéðinsson"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Reykv. s.",
+                    "abbr_short": "RS",
+                    "constituency_id": 45,
+                    "date": "2011-10-01",
+                    "description": "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    "name": "Reykjavíkurkjördæmi suður"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 10418,
+                "ministry": {
+                    "abbr_long": "utanríkisrh.",
+                    "abbr_short": "utanrrh.",
+                    "first": 58,
+                    "last": 150,
+                    "ministry_id": 104,
+                    "name": "utanríkisráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 58,
+        "first_ministry_assembly": {
+            "assembly_id": 58,
+            "from": "1941-10-13T00:00:00+00:00",
+            "to": "1941-11-21T01:00:00+00:00"
+        },
+        "last": 150,
+        "last_ministry_assembly": {
+            "assembly_id": 150,
+            "from": "2019-09-10T00:00:00+00:00",
+            "to": "2020-09-30T00:00:00+00:00"
+        },
+        "ministry_id": 104,
+        "name": "utanríkisráðherra"
+    },
+    {
+        "_id": 208,
+        "abbr_long": "atv.- og nýskrh.",
+        "abbr_short": "atvvrh.",
+        "congressmen": [
+            {
+                "_id": 9677,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1955-08-04T00:00:00+00:00",
+                    "congressman_id": 557,
+                    "death": null,
+                    "name": "Steingrímur J. Sigfússon"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Norðaust.",
+                    "abbr_short": "NA",
+                    "constituency_id": 49,
+                    "date": "2012-09-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    "name": "Norðausturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2012-09-01T00:00:00+00:00",
+                "minister_sitting_id": 9677,
+                "ministry": {
+                    "abbr_long": "atv.- og nýskrh.",
+                    "abbr_short": "atvvrh.",
+                    "first": 140,
+                    "last": 141,
+                    "ministry_id": 208,
+                    "name": "atvinnuvega- og nýsköpunarráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 140,
+        "first_ministry_assembly": {
+            "assembly_id": 140,
+            "from": "2011-10-01T00:00:00+00:00",
+            "to": "2012-09-10T00:00:00+00:00"
+        },
+        "last": 141,
+        "last_ministry_assembly": {
+            "assembly_id": 141,
+            "from": "2012-09-11T00:00:00+00:00",
+            "to": "2013-04-26T00:00:00+00:00"
+        },
+        "ministry_id": 208,
+        "name": "atvinnuvega- og nýsköpunarráðherra"
+    },
+    {
+        "_id": 187,
+        "abbr_long": "menntamálarh.",
+        "abbr_short": "menntmrh.",
+        "congressmen": [
+            {
+                "_id": 13845,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1976-02-01T00:00:00+00:00",
+                    "congressman_id": 690,
+                    "death": null,
+                    "name": "Katrín Jakobsdóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Reykv. n.",
+                    "abbr_short": "RN",
+                    "constituency_id": 44,
+                    "date": "2011-10-01",
+                    "description": "Reykjavík skal skipta frá vestri til austurs í tvö kjördæmi, suðurkjördæmi og norðurkjördæmi.",
+                    "name": "Reykjavíkurkjördæmi norður"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13845,
+                "ministry": {
+                    "abbr_long": "menntamálarh.",
+                    "abbr_short": "menntmrh.",
+                    "first": 138,
+                    "last": 151,
+                    "ministry_id": 187,
+                    "name": "mennta- og menningarmálaráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 138,
+        "first_ministry_assembly": {
+            "assembly_id": 138,
+            "from": "2009-10-01T00:00:00+00:00",
+            "to": "2010-09-30T00:00:00+00:00"
+        },
+        "last": 151,
+        "last_ministry_assembly": {
+            "assembly_id": 151,
+            "from": "2020-10-01T00:00:00+00:00",
+            "to": "2021-09-24T00:00:00+00:00"
+        },
+        "ministry_id": 187,
+        "name": "mennta- og menningarmálaráðherra"
+    },
+    {
+        "_id": 109,
+        "abbr_long": "iðnaðarrh.",
+        "abbr_short": "iðnrh.",
+        "congressmen": [
+            {
+                "_id": 13964,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": "KaJúl",
+                    "birth": "1974-11-23T00:00:00+00:00",
+                    "congressman_id": 660,
+                    "death": null,
+                    "name": "Katrín Júlíusdóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Suðvest.",
+                    "abbr_short": "SV",
+                    "constituency_id": 50,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    "name": "Suðvesturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13964,
+                "ministry": {
+                    "abbr_long": "iðnaðarrh.",
+                    "abbr_short": "iðnrh.",
+                    "first": 1,
+                    "last": 140,
+                    "ministry_id": 109,
+                    "name": "iðnaðarráðherra"
+                },
+                "to": "2012-08-31T00:00:00+00:00"
+            }
+        ],
+        "first": 1,
+        "first_ministry_assembly": {
+            "assembly_id": 1,
+            "from": "1875-07-01T01:28:00+00:00",
+            "to": "1875-08-26T01:28:00+00:00"
+        },
+        "last": 140,
+        "last_ministry_assembly": {
+            "assembly_id": 140,
+            "from": "2011-10-01T00:00:00+00:00",
+            "to": "2012-09-10T00:00:00+00:00"
+        },
+        "ministry_id": 109,
+        "name": "iðnaðarráðherra"
+    },
+    {
+        "_id": 107,
+        "abbr_long": "fjármálarh.",
+        "abbr_short": "fjmrh.",
+        "congressmen": [
+            {
+                "_id": 9674,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1955-08-04T00:00:00+00:00",
+                    "congressman_id": 557,
+                    "death": null,
+                    "name": "Steingrímur J. Sigfússon"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Norðaust.",
+                    "abbr_short": "NA",
+                    "constituency_id": 49,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    "name": "Norðausturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 9674,
+                "ministry": {
+                    "abbr_long": "fjármálarh.",
+                    "abbr_short": "fjmrh.",
+                    "first": 1,
+                    "last": 140,
+                    "ministry_id": 107,
+                    "name": "fjármálaráðherra"
+                },
+                "to": "2011-12-31T00:00:00+00:00"
+            },
+            {
+                "_id": 14286,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1957-04-09T00:00:00+00:00",
+                    "congressman_id": 719,
+                    "death": null,
+                    "name": "Oddný G. Harðardóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Suðurk.",
+                    "abbr_short": "SU",
+                    "constituency_id": 46,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Sveitarfélagið Hornafjörður, Skaftárhreppur, Mýrdalshreppur, Austur-Eyjafjallahreppur, Vestur-Eyjafjallahreppur, Austur-Landeyjahreppur, Vestur-Landeyjahreppur, Fljótshlíðarhreppur, Hvolhreppur, Rangárvallahreppur, Holta- og Landsveit, Ásahreppur, Djúpárhreppur, Vestmannaeyjabær, Gaulverjabæjarhreppur, Sveitarfélagið Árborg, Hraungerðishreppur, Villingaholtshreppur, Skeiðahreppur, Gnúpverjahreppur, Hrunamannahreppur, Biskupstungnahreppur, Laugardalshreppur, Grímsnes- og Grafningshreppur, Þingvallahreppur, Hveragerðisbær, Sveitarfélagið Ölfus, Grindavíkurkaupstaður, Sandgerðisbær, Gerðahreppur, Reykjanesbær og Vatnsleysustrandarhreppur.",
+                    "name": "Suðurkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2011-12-31T00:00:00+00:00",
+                "minister_sitting_id": 14286,
+                "ministry": {
+                    "abbr_long": "fjármálarh.",
+                    "abbr_short": "fjmrh.",
+                    "first": 1,
+                    "last": 140,
+                    "ministry_id": 107,
+                    "name": "fjármálaráðherra"
+                },
+                "to": "2012-01-10T00:00:00+00:00"
+            },
+            {
+                "_id": 14287,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1957-04-09T00:00:00+00:00",
+                    "congressman_id": 719,
+                    "death": null,
+                    "name": "Oddný G. Harðardóttir"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Suðurk.",
+                    "abbr_short": "SU",
+                    "constituency_id": 46,
+                    "date": "2011-12-31",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Sveitarfélagið Hornafjörður, Skaftárhreppur, Mýrdalshreppur, Austur-Eyjafjallahreppur, Vestur-Eyjafjallahreppur, Austur-Landeyjahreppur, Vestur-Landeyjahreppur, Fljótshlíðarhreppur, Hvolhreppur, Rangárvallahreppur, Holta- og Landsveit, Ásahreppur, Djúpárhreppur, Vestmannaeyjabær, Gaulverjabæjarhreppur, Sveitarfélagið Árborg, Hraungerðishreppur, Villingaholtshreppur, Skeiðahreppur, Gnúpverjahreppur, Hrunamannahreppur, Biskupstungnahreppur, Laugardalshreppur, Grímsnes- og Grafningshreppur, Þingvallahreppur, Hveragerðisbær, Sveitarfélagið Ölfus, Grindavíkurkaupstaður, Sandgerðisbær, Gerðahreppur, Reykjanesbær og Vatnsleysustrandarhreppur.",
+                    "name": "Suðurkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2012-01-10T00:00:00+00:00",
+                "minister_sitting_id": 14287,
+                "ministry": {
+                    "abbr_long": "fjármálarh.",
+                    "abbr_short": "fjmrh.",
+                    "first": 1,
+                    "last": 140,
+                    "ministry_id": 107,
+                    "name": "fjármálaráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 1,
+        "first_ministry_assembly": {
+            "assembly_id": 1,
+            "from": "1875-07-01T01:28:00+00:00",
+            "to": "1875-08-26T01:28:00+00:00"
+        },
+        "last": 140,
+        "last_ministry_assembly": {
+            "assembly_id": 140,
+            "from": "2011-10-01T00:00:00+00:00",
+            "to": "2012-09-10T00:00:00+00:00"
+        },
+        "ministry_id": 107,
+        "name": "fjármálaráðherra"
+    },
+    {
+        "_id": 172,
+        "abbr_long": "sjútv.- og landbrh.",
+        "abbr_short": "slrh.",
+        "congressmen": [
+            {
+                "_id": 13944,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": "JBjarn",
+                    "birth": "1943-12-26T01:00:00+00:00",
+                    "congressman_id": 371,
+                    "death": null,
+                    "name": "Jón Bjarnason"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Norðvest.",
+                    "abbr_short": "NV",
+                    "constituency_id": 51,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    "name": "Norðvesturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13944,
+                "ministry": {
+                    "abbr_long": "sjútv.- og landbrh.",
+                    "abbr_short": "slrh.",
+                    "first": 135,
+                    "last": 140,
+                    "ministry_id": 172,
+                    "name": "sjávarútvegs- og landbúnaðarráðherra"
+                },
+                "to": "2011-12-31T00:00:00+00:00"
+            },
+            {
+                "_id": 9676,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1955-08-04T00:00:00+00:00",
+                    "congressman_id": 557,
+                    "death": null,
+                    "name": "Steingrímur J. Sigfússon"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Norðaust.",
+                    "abbr_short": "NA",
+                    "constituency_id": 49,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    "name": "Norðausturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-12-31T00:00:00+00:00",
+                "minister_sitting_id": 9676,
+                "ministry": {
+                    "abbr_long": "sjútv.- og landbrh.",
+                    "abbr_short": "slrh.",
+                    "first": 135,
+                    "last": 140,
+                    "ministry_id": 172,
+                    "name": "sjávarútvegs- og landbúnaðarráðherra"
+                },
+                "to": "2012-08-31T00:00:00+00:00"
+            }
+        ],
+        "first": 135,
+        "first_ministry_assembly": {
+            "assembly_id": 135,
+            "from": "2007-09-28T00:00:00+00:00",
+            "to": "2008-09-30T00:00:00+00:00"
+        },
+        "last": 140,
+        "last_ministry_assembly": {
+            "assembly_id": 140,
+            "from": "2011-10-01T00:00:00+00:00",
+            "to": "2012-09-10T00:00:00+00:00"
+        },
+        "ministry_id": 172,
+        "name": "sjávarútvegs- og landbúnaðarráðherra"
+    },
+    {
+        "_id": 197,
+        "abbr_long": "velferðarrh.",
+        "abbr_short": "velfrh.",
+        "congressmen": [
+            {
+                "_id": 14036,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": "GuðbH",
+                    "birth": "1950-06-03T00:00:00+00:00",
+                    "congressman_id": 683,
+                    "death": null,
+                    "name": "Guðbjartur Hannesson"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Norðvest.",
+                    "abbr_short": "NV",
+                    "constituency_id": 51,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    "name": "Norðvesturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 14036,
+                "ministry": {
+                    "abbr_long": "velferðarrh.",
+                    "abbr_short": "velfrh.",
+                    "first": 139,
+                    "last": 141,
+                    "ministry_id": 197,
+                    "name": "velferðarráðherra"
+                },
+                "to": "2012-09-10T00:00:00+00:00"
+            }
+        ],
+        "first": 139,
+        "first_ministry_assembly": {
+            "assembly_id": 139,
+            "from": "2010-10-01T00:00:00+00:00",
+            "to": "2011-09-30T00:00:00+00:00"
+        },
+        "last": 141,
+        "last_ministry_assembly": {
+            "assembly_id": 141,
+            "from": "2012-09-11T00:00:00+00:00",
+            "to": "2013-04-26T00:00:00+00:00"
+        },
+        "ministry_id": 197,
+        "name": "velferðarráðherra"
+    },
+    {
+        "_id": 189,
+        "abbr_long": "efnahags- og viðskrh.",
+        "abbr_short": "efnahrh.",
+        "congressmen": [
+            {
+                "_id": 13920,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": "ÁPÁ",
+                    "birth": "1966-05-23T00:00:00+00:00",
+                    "congressman_id": 678,
+                    "death": null,
+                    "name": "Árni Páll Árnason"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Suðvest.",
+                    "abbr_short": "SV",
+                    "constituency_id": 50,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Hafnarfjarðarkaupstaður, Garðabær, Bessastaðahreppur, Kópavogsbær, Seltjarnarneskaupstaður, Mosfellsbær og Kjósarhreppur.",
+                    "name": "Suðvesturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Samf.",
+                    "abbr_short": "Sf",
+                    "color": null,
+                    "name": "Samfylkingin",
+                    "party_id": 38
+                },
+                "from": "2011-10-01T00:00:00+00:00",
+                "minister_sitting_id": 13920,
+                "ministry": {
+                    "abbr_long": "efnahags- og viðskrh.",
+                    "abbr_short": "efnahrh.",
+                    "first": 138,
+                    "last": 140,
+                    "ministry_id": 189,
+                    "name": "efnahags- og viðskiptaráðherra"
+                },
+                "to": "2011-12-31T00:00:00+00:00"
+            },
+            {
+                "_id": 9675,
+                "assembly": {
+                    "assembly_id": 140,
+                    "from": "2011-10-01T00:00:00+00:00",
+                    "to": "2012-09-10T00:00:00+00:00"
+                },
+                "congressman": {
+                    "abbreviation": null,
+                    "birth": "1955-08-04T00:00:00+00:00",
+                    "congressman_id": 557,
+                    "death": null,
+                    "name": "Steingrímur J. Sigfússon"
+                },
+                "congressman_constituency": {
+                    "abbr_long": "Norðaust.",
+                    "abbr_short": "NA",
+                    "constituency_id": 49,
+                    "date": "2011-10-01",
+                    "description": "Til þess teljast eftirtalin sveitarfélög: Akraneskaupstaður, Hvalfjarðarstrandarhreppur, Skilmannahreppur, Innri-Akraneshreppur, Leirár- og Melahreppur, Skorradalshreppur, Borgarfjarðarsveit, Hvítársíðuhreppur, Borgarbyggð, Kolbeinsstaðahreppur, Eyja- og Miklaholtshreppur, Snæfellsbær, Eyrarsveit, Helgafellssveit, Stykkishólmsbær, Dalabyggð, Saurbæjarhreppur, Reykhólahreppur, Vesturbyggð, Tálknafjarðarhreppur, Bolungarvíkurkaupstaður, Ísafjarðarbær, Súðavíkurhreppur, Árneshreppur, Kaldrananeshreppur, Hólmavíkurhreppur, Kirkjubólshreppur, Broddaneshreppur, Bæjarhreppur, Húnaþing vestra, Áshreppur, Sveinsstaðahreppur, Torfalækjarhreppur, Blönduósbær, Svínavatnshreppur, Bólstaðarhlíðarhreppur, Engihlíðarhreppur, Vindhælishreppur, Höfðahreppur, Skagahreppur, Sveitarfélagið Skagafjörður og Akrahreppur.",
+                    "name": "Norðausturkjördæmi"
+                },
+                "congressman_party": {
+                    "abbr_long": "Vinstri-gr.",
+                    "abbr_short": "Vg",
+                    "color": null,
+                    "name": "Vinstrihreyfingin - grænt framboð",
+                    "party_id": 23
+                },
+                "from": "2011-12-31T00:00:00+00:00",
+                "minister_sitting_id": 9675,
+                "ministry": {
+                    "abbr_long": "efnahags- og viðskrh.",
+                    "abbr_short": "efnahrh.",
+                    "first": 138,
+                    "last": 140,
+                    "ministry_id": 189,
+                    "name": "efnahags- og viðskiptaráðherra"
+                },
+                "to": "2012-08-31T00:00:00+00:00"
+            }
+        ],
+        "first": 138,
+        "first_ministry_assembly": {
+            "assembly_id": 138,
+            "from": "2009-10-01T00:00:00+00:00",
+            "to": "2010-09-30T00:00:00+00:00"
+        },
+        "last": 140,
+        "last_ministry_assembly": {
+            "assembly_id": 140,
+            "from": "2011-10-01T00:00:00+00:00",
+            "to": "2012-09-10T00:00:00+00:00"
+        },
+        "ministry_id": 189,
+        "name": "efnahags- og viðskiptaráðherra"
     }
 ]
