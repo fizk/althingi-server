@@ -28,6 +28,10 @@ export const Client: Context = {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingsetur?tegund=${params?.type === 'PRIMARY' ? 'thingmenn' : 'varamenn'}`)
                     .then(response => response.json())
             }
+            case 'assembly.presidents.sessions': {
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingsetur/forsetar`)
+                    .then(response => response.json())
+            }
             case 'assembly.constituencies.sessions': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingsetur/kjordaemi?tegund=${params?.type === 'PRIMARY' ? 'thingmenn' : 'varamenn'}`)
                     .then(response => response.json())
