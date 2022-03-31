@@ -20,6 +20,10 @@ export const Client: Context = {
             case 'assembly.congressman': {
                 return Promise.reject();
             }
+            case 'assembly.inflation':{
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/verdbolga`)
+                    .then(response => response.json())
+            }
             case 'assembly.parties':{
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingflokkar`)
                     .then(response => response.json())
