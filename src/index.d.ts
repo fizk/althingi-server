@@ -8,6 +8,7 @@ export interface Context {
             'assembly.constituencies.sessions' |
             'assembly.government.sessions' |
             'assembly.presidents.sessions' |
+            'assembly.committees.sessions' |
             'assembly.government.parties' |
             'assembly.inflation' |
             'assembly.plenary' |

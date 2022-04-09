@@ -1,5 +1,5 @@
 import { GraphQLObjectType, GraphQLNonNull } from '../../lib/graphql/type/definition.ts';
-import { GraphQLString, GraphQLID } from '../../lib/graphql/type/scalars.ts';
+import { GraphQLString, GraphQLID, GraphQLInt } from '../../lib/graphql/type/scalars.ts';
 import { Party } from './Party.ts'
 import { Constituency } from './Constituency.ts'
 
@@ -34,6 +34,10 @@ export const Session: GraphQLObjectType = new GraphQLObjectType({
         type: {
             type: new GraphQLNonNull(GraphQLString),
             resolve: ({ type }) => type,
+        },
+        order: {
+            type: GraphQLInt,
+            resolve: ({ order }) => order || null,
         },
     }),
 });

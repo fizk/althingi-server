@@ -512,6 +512,9 @@ export const MockClient: Context = {
             case 'assembly.presidents.sessions': {
                 return Deno.readTextFile('/app/src/data/forsetar.json').then(data => JSON.parse(data));
             }
+            case 'assembly.committees.sessions': {
+                return Deno.readTextFile('/app/src/data/nefndir.json').then(data => JSON.parse(data));
+            }
             case 'assembly.parties': {
                 return Promise.resolve(assemblyParties);
             }
