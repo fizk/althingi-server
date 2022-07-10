@@ -1,6 +1,6 @@
 import { GraphQLNonNull, GraphQLFieldConfig } from '../../lib/graphql/type/definition.ts';
 import { GraphQLID } from '../../lib/graphql/type/scalars.ts';
-import { Congressman } from '../type/Congressman.ts';
+import { AssemblyCongressman } from '../type/AssemblyCongressman.ts';
 import type { Context } from '../index.d.ts';
 
 interface Args {
@@ -9,7 +9,7 @@ interface Args {
 }
 
 const AssemblyCongressmanConfig: GraphQLFieldConfig<null, Context, Args> = {
-    type: Congressman,
+    type: AssemblyCongressman,
     args: {
         assembly: {
             type: new GraphQLNonNull(GraphQLID),
@@ -17,7 +17,6 @@ const AssemblyCongressmanConfig: GraphQLFieldConfig<null, Context, Args> = {
         congressman: {
             type: new GraphQLNonNull(GraphQLID),
         },
-
     },
     resolve: (_, { assembly, congressman }, { get }) => (
         get('assembly.congressman', { assembly, congressman })
