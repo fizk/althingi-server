@@ -54,12 +54,17 @@ export const Client: Context = {
             }
             case 'assembly.government.parties': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/stjornarflokkar`)
-                    .then(response => response.json())
+                    .then(response => response.json());
             }
             case 'assembly.plenary':
-                return Promise.reject();
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingfundir/${params?.plenary}`)
+                    .then(response => response.json());
             case 'assembly.plenaries':
-                return Promise.reject();
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingfundir`)
+                    .then(response => response.json());
+            case 'assembly.plenary-agenda':
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingfundir/${params?.plenary}/lidir`)
+                    .then(response => response.json());
             case 'assembly.issue':
                 return Promise.reject();
             case 'assembly.issues':

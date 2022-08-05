@@ -10,7 +10,11 @@ export const PlenaryItem: GraphQLObjectType = new GraphQLObjectType({
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
-            resolve: ({ plenary_item_id }) => plenary_item_id,
+            resolve: ({ item_id }) => item_id,
+        },
+        key: {
+            type: new GraphQLNonNull(GraphQLID),
+            resolve: ({ _id }) => `${_id.assembly_id}-${_id.plenary_id}-${_id.item_id}`,
         },
         assembly: {
             type: new GraphQLNonNull(Assembly),
@@ -20,10 +24,10 @@ export const PlenaryItem: GraphQLObjectType = new GraphQLObjectType({
             type: new GraphQLNonNull(Issue),
             resolve: ({ issue }) => issue,
         },
-        // plenary: {
-        //     type: new GraphQLNonNull(Plenary),
-        //     resolve: ({ plenary }) => plenary,
-        // },
+        plenary: {
+            type: new GraphQLNonNull(Plenary),
+            resolve: ({ plenary }) => plenary,
+        },
         iterationType: {
             type: GraphQLString,
             resolve: ({ iteration_type }) => iteration_type,

@@ -13,6 +13,7 @@ export interface Context {
             'assembly.inflation' |
             'assembly.plenary' |
             'assembly.plenaries' |
+            'assembly.plenary-agenda' |
             'assembly.parties.sessions' |
             'assembly.issue' |
             'assembly.issues' |
