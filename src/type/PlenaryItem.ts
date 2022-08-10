@@ -50,19 +50,63 @@ export const PlenaryItem: GraphQLObjectType = new GraphQLObjectType({
         },
         posed: {
             type: Congressman,
-            resolve: ({ posed }) => posed,
+            resolve: ({ posed, posed_party, posed_constituency }) => (
+                posed
+                    ? {
+                        ...posed,
+                        parties: [posed_party],
+                        constituencies: [posed_constituency]
+                    } : null
+            ),
+        },
+        posedTitle: {
+            type: GraphQLString,
+            resolve: ({ posed_title }) => posed_title
         },
         answerer: {
             type: Congressman,
-            resolve: ({ answerer }) => answerer,
+            resolve: ({ answerer, answerer_party, answerer_constituency }) => (
+                answerer
+                    ? {
+                        ...answerer,
+                        parties: [answerer_party],
+                        constituencies: [answerer_constituency]
+                    } : null
+            ),
+        },
+        answererTitle: {
+            type: GraphQLString,
+            resolve: ({ answerer_title }) => answerer_title
         },
         counterAnswerer: {
             type: Congressman,
-            resolve: ({ counter_answerer }) => counter_answerer,
+            resolve: ({ counter_answerer, counter_answerer_party, counter_answerer_constituency }) => (
+                counter_answerer
+                    ? {
+                        ...counter_answerer,
+                        parties: [counter_answerer_party],
+                        constituencies: [counter_answerer_constituency]
+                    } : null
+            ),
+        },
+        counterAnswererTitle: {
+            type: GraphQLString,
+            resolve: ({ counter_answerer_title }) => counter_answerer_title
         },
         instigator: {
             type: Congressman,
-            resolve: ({ instigator }) => instigator,
+            resolve: ({ instigator, instigator_party, instigator_constituency }) => (
+                instigator
+                    ? {
+                        ...instigator,
+                        parties: [instigator_party],
+                        constituencies: [instigator_constituency]
+                    } : null
+            ),
+        },
+        instigatorTitle: {
+            type: GraphQLString,
+            resolve: ({ instigator_title }) => instigator_title
         },
     }),
 });
