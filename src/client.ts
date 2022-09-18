@@ -20,11 +20,11 @@ export const Client: Context = {
             case 'assembly.congressman': {
                 return Promise.reject();
             }
-            case 'assembly.inflation':{
+            case 'assembly.inflation': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/verdbolga`)
                     .then(response => response.json())
             }
-            case 'assembly.parties':{
+            case 'assembly.parties': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingflokkar`)
                     .then(response => response.json())
             }
@@ -56,23 +56,72 @@ export const Client: Context = {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/stjornarflokkar`)
                     .then(response => response.json());
             }
-            case 'assembly.plenary':
+            case 'assembly.plenary': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingfundir/${params?.plenary}`)
-                    .then(response => response.json());
-            case 'assembly.plenaries':
+                    .then(response => response.json())
+            }
+            case 'assembly.speech.aggregation': {
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/raedutimar?fjoldi=${params?.limit || 10}`)
+                    .then(response => response.json())
+            }
+            case 'assembly.content-categories': {
+                const types = ((params?.types as string[]) || []).join(',');
+                const query = params?.types
+                    ? `?malaflokkur=${types}`
+                    : '';
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/efnisflokkar${query}`)
+                    .then(response => response.json())
+            }
+            case 'assembly.issue-statuses': {
+                const types = ((params?.types as string[]) || []).join(',');
+                const query = params?.types
+                    ? `?malaflokkur=${types}`
+                    : '';
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/stodur${query}`)
+                    .then(response => response.json())
+            }
+            case 'assembly.plenaries': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingfundir`)
-                    .then(response => response.json());
-            case 'assembly.plenary-agenda':
+                    .then(response => response.json())
+            }
+            case 'assembly.plenary-agenda': {
                 return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingfundir/${params?.plenary}/lidir`)
+                    .then(response => response.json())
+            }
+            case 'assembly.issue': {
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/${params?.category}/${params?.issue}`)
                     .then(response => response.json());
-            case 'assembly.issue':
-                return Promise.reject();
-            case 'assembly.issues':
-                return Promise.reject();
-            case 'assembly.issue.documents':
-                return Promise.reject();
-            case 'assembly.issue.speeches':
-                return Promise.reject();
+            }
+            case 'assembly.issues': {
+
+                const types = ((params?.types as string[]) || []).join(',');
+
+                const paramsArray = [];
+                types.length && paramsArray.push(`malaflokkur=${types}`);
+                params?.pointer && paramsArray.push(`bendill=${params?.pointer}`);
+
+                const url = params?.category
+                    ? `${storageHost}/loggjafarthing/${params?.assembly}/thingmal/${params?.category}${paramsArray ? `?${paramsArray.join('&')}` : ''}`
+                    : `${storageHost}/loggjafarthing/${params?.assembly}/thingmal${paramsArray ? `?${paramsArray.join('&')}` : ''}`
+                return fetch(url).then(response => response.json());
+            }
+            case 'assembly.issue.documents': {
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/${params?.category}/${params?.issue}/thingskjol`)
+                    .then(response => response.json());
+            }
+            case 'assembly.issue.speeches': {
+                if (params?.speech) {
+                    return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/${params?.category}/${params?.issue}/readur?bendill=${params?.speech}`)
+                        .then(response => response.json());
+                } else {
+                    return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/${params?.category}/${params?.issue}/readur`)
+                        .then(response => response.json());
+                }
+            }
+            case 'assembly.issue.speech.aggregation': {
+                return fetch(`${storageHost}/loggjafarthing/${params?.assembly}/thingmal/${params?.category}/${params?.issue}/readur/samantekt`)
+                    .then(response => response.json());
+            }
             default:
                 return Promise.reject();
         }

@@ -3,8 +3,8 @@ import { GraphQLString, GraphQLID } from '../../lib/graphql/type/scalars.ts';
 import { Assembly } from './Assembly.ts';
 import { CongressmanSessions } from './CongressmanSessions.ts';
 
-export const CommitteeSessions: GraphQLObjectType = new GraphQLObjectType({
-    name: 'CommitteeSessions',
+export const Committee: GraphQLObjectType = new GraphQLObjectType({
+    name: 'Committee',
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
@@ -34,9 +34,5 @@ export const CommitteeSessions: GraphQLObjectType = new GraphQLObjectType({
             type: Assembly,
             resolve: ({ last_assembly }) => last_assembly,
         },
-        sessions: {
-            type: new GraphQLList(CongressmanSessions),
-            resolve: ({ sessions }) => sessions,
-        }
     }),
 });

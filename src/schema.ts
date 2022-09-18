@@ -10,6 +10,9 @@ import AssemblyCommittees from './query/AssemblyCommittees.ts';
 import AssemblyPresidents from './query/AssemblyPresidents.ts';
 import AssemblyGovernment from './query/AssemblyGovernment.ts';
 import AssemblyInflation from './query/AssemblyInflation.ts';
+import AssemblyContentCategories from './query/AssemblyContentCategories.ts';
+import AssemblyIssueStatuses from './query/AssemblyIssueStatuses.ts';
+import AssemblySpeechAggregation from './query/AssemblySpeechAggregation.ts';
 import AssemblyParties from './query/AssemblyParties.ts';
 import AssemblyIssue from './query/AssemblyIssue.ts';
 import AssemblyIssues from './query/AssemblyIssues.ts';
@@ -32,6 +35,9 @@ export default new GraphQLSchema({
             AssemblyPresidents,
             AssemblyGovernment,
             AssemblyInflation,
+            AssemblySpeechAggregation,
+            AssemblyContentCategories,
+            AssemblyIssueStatuses,
             AssemblyParties,
             AssemblyPlenary,
             AssemblyPlenaries,

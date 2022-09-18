@@ -2,15 +2,14 @@ import { GraphQLObjectType, GraphQLNonNull, GraphQLList } from '../../lib/graphq
 import { GraphQLString, GraphQLID } from '../../lib/graphql/type/scalars.ts';
 import { Assembly } from './Assembly.ts';
 import { Congressman } from './Congressman.ts';
-import { CongressmanSpeechAggregation } from './CongressmanSpeechAggregation.ts';
 import { IssueCategoryType } from './IssueCategoryType.ts';
 import { ContentCategory } from './ContentCategory.ts';
 import { ContentSuperCategory } from './ContentSuperCategory.ts';
 import { Proponent } from './Proponent.ts';
 import turndown from '../turndown.ts';
 
-export const Issue: GraphQLObjectType = new GraphQLObjectType({
-    name: 'Issue',
+export const EmbeddedIssue: GraphQLObjectType = new GraphQLObjectType({
+    name: 'EmbeddedIssue',
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
@@ -96,11 +95,5 @@ export const Issue: GraphQLObjectType = new GraphQLObjectType({
             type: GraphQLString,
             resolve: ({ additional_information }) => additional_information ? turndown(additional_information) : null
         },
-        speechAggregation: {
-            type: new GraphQLList(CongressmanSpeechAggregation),
-            resolve: ({assembly, issue_id, category}, _, { get }) => (
-                get('assembly.issue.speech.aggregation', { assembly: assembly.assembly_id, issue: issue_id, category })
-            )
-        }
     }),
 });

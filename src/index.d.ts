@@ -10,6 +10,9 @@ export interface Context {
             'assembly.presidents.sessions' |
             'assembly.committees.sessions' |
             'assembly.government.parties' |
+            'assembly.content-categories' |
+            'assembly.issue-statuses' |
+            'assembly.speech.aggregation' |
             'assembly.inflation' |
             'assembly.plenary' |
             'assembly.plenaries' |

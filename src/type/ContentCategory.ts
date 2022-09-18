@@ -1,27 +1,23 @@
 import { GraphQLObjectType, GraphQLNonNull } from '../../lib/graphql/type/definition.ts';
 import { GraphQLString, GraphQLID } from '../../lib/graphql/type/scalars.ts';
 
-export const Constituency: GraphQLObjectType = new GraphQLObjectType({
-    name: 'Constituency',
+export const ContentCategory: GraphQLObjectType = new GraphQLObjectType({
+    name: 'ContentCategory',
     fields: () => ({
         id: {
             type: new GraphQLNonNull(GraphQLID),
             resolve: ({ _id }) => _id,
         },
-        name: {
-            type: new GraphQLNonNull(GraphQLString),
-            resolve: ({ name }) => name,
+        superId: {
+            type: GraphQLID,
+            resolve: ({ super_category_id }) => super_category_id,
         },
-        abbrShort: {
+        title: {
             type: new GraphQLNonNull(GraphQLString),
-            resolve: ({ abbr_short }) => abbr_short,
-        },
-        abbrLong: {
-            type: GraphQLString,
-            resolve: ({ abbr_long }) => abbr_long,
+            resolve: ({ title }) => title,
         },
         description: {
-            type: GraphQLString,
+            type: new GraphQLNonNull(GraphQLString),
             resolve: ({ description }) => description,
         },
     }),

@@ -1,7 +1,7 @@
 import { GraphQLNonNull, GraphQLFieldConfig } from '../../lib/graphql/type/definition.ts';
 import { GraphQLID } from '../../lib/graphql/type/scalars.ts';
 import { Issue } from '../type/Issue.ts';
-import { IssueCategory } from '../type/IssueCategory.ts';
+import { IssueCategoryType } from '../type/IssueCategoryType.ts';
 import type { Context } from '../index.d.ts';
 
 interface Args {
@@ -20,7 +20,7 @@ const AssemblyIssueConfig: GraphQLFieldConfig<null, Context, Args> = {
             type: new GraphQLNonNull(GraphQLID),
         },
         category: {
-            type: new GraphQLNonNull(IssueCategory),
+            type: new GraphQLNonNull(IssueCategoryType),
         },
     },
     resolve: (_, { assembly, issue, category }, {get}) => (

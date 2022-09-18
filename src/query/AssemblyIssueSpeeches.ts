@@ -1,18 +1,18 @@
 import { GraphQLNonNull, GraphQLFieldConfig, GraphQLList } from '../../lib/graphql/type/definition.ts';
 import { GraphQLID, GraphQLString } from '../../lib/graphql/type/scalars.ts';
-import { Speech } from '../type/Speech.ts';
-import { IssueCategory } from '../type/IssueCategory.ts';
+import { SpeechList } from '../type/SpeechList.ts';
+import { IssueCategoryType } from '../type/IssueCategoryType.ts';
 import type { Context } from '../index.d.ts';
 
 interface Args {
     assembly: number
     issue: number
     category: string
-    pointer: string | null
+    speech: string | null
 }
 
 const AssemblyIssueSpeechesConfig: GraphQLFieldConfig<null, Context, Args> = {
-    type: new GraphQLList(Speech),
+    type: SpeechList,
     args: {
         assembly: {
             type: new GraphQLNonNull(GraphQLID),
@@ -21,14 +21,14 @@ const AssemblyIssueSpeechesConfig: GraphQLFieldConfig<null, Context, Args> = {
             type: new GraphQLNonNull(GraphQLID),
         },
         category: {
-            type: new GraphQLNonNull(IssueCategory),
+            type: new GraphQLNonNull(IssueCategoryType),
         },
-        pointer: {
-            type: GraphQLString,
+        speech: {
+            type: GraphQLID,
         },
     },
-    resolve: (_, { assembly, issue, category, pointer }, { get }) => (
-        get('assembly.issue.speeches', { assembly, issue, category, pointer })
+    resolve: (_, { assembly, issue, category, speech }, { get }) => (
+        get('assembly.issue.speeches', { assembly, issue, category, speech })
     )
 };
 
